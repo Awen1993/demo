@@ -2,22 +2,32 @@
     margin: 0px;
     padding: 0%;
     box-sizing: border-box;  
+    /*overflow: hidden;*/
 }
+
 body{
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../aa.jpg);
-    background-size: cover;
+    /*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(../aa.jpg);*/
     background-repeat: no-repeat;
+    background-position: center;
+}
+/*.support {
+    bottom: 0px;
+}*/
+
 nav {
     width: 100%;
-    height: 75px;
-    line-height: 75px;
-    padding: 0px 120px;
+    height: 120px;
+    line-height: 45px;
+    padding: 0px, 0px;
     background-image: url(blue.jpg);
+    position:sticky;
+    /*top: 50px;*/
 
 }
 nav .logo p{
-    font-size: 32px; 
+    font-size: 25px; 
     font-weight: bold;
     color: #FFD700;
     float: left;
@@ -25,10 +35,22 @@ nav .logo p{
     letter-spacing: 1.5;
     cursor: pointer;
     font-family: sans-serif;
+    top: 20px;
+    position: relative;
+    margin-left: 60px;
+}
+nav .Tag p {
+    font-size: 13px;
+    float: left;
+    text-transform: uppercase;
+    margin-left: 65px;
+    top: 50px;
+    position:absolute;
 }
 
 nav ul{
- float: right;
+   float: right;
+   top: 50px;
 }
 
 nav ul li{
@@ -40,17 +62,19 @@ nav ul li{
 nav ul li a{
     font-size: 17 px;
     text-transform: uppercase;
-    padding: 0px 20px;
+    padding: 0px 15px;
     color: #00b3fff3;
     text-decoration: none;
     display: block;
     font-family: sans-serif;
+   /* position: relative;*/
 
 }
 nav ul li a:hover{
     background: #00b3fff3;
     color: #FFD700;
-    transition: all 0.4s ease 0s;
+    transition: all 0.10s ease 0s;
+    border-radius: 0px 0px 20px 0px;
 }
 nav ul li ul{
     position: absolute;
@@ -69,44 +93,190 @@ nav ul li ul li{
 
 }
 nav ul li ul li a{
-    padding:5px 2%;
+    padding:5px;
 }
 nav ul li ul li a:hover{
     background: #00b3fff3;
     color: #FFD700;
 }
+/* Search Bar Styling */
+.search-form {
+    display:flex;
+}
 
-/* Hero Section with Background Image */
+.search-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 5px 5px;
+    border: none;
+    background: #00b3fff3;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+}
+/*.dropdown-icon {
+    font-size: 20px;
+}*/
+
+.search-form button:hover {
+    background: #fff;
+}
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 190vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: hsla(198, 97%, 23%, 0.953);
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Transparent Background Image */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Assist.jpg') no-repeat center center/cover;
+    opacity: 0.4; /* This makes only the background image 50% transparent */
+    z-index: -1;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* Heading */
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Subtext */
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    opacity: 1;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* CTA Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 2.2rem;
+    color: #00b3fff3;
+    background: #f1c40f;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.btn:hover {
+    background: #00b3fff3;
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        /*transform: translateY(20px);*/
+    }
+    to {
+        opacity: 1;
+       /* transform: translateY(0);*/
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+.hero .Opaque p{
+    font: 1em sans-serif;
+    font-size:  30px;
+    margin-top: 5px;
+    font-weight: bold;
+    opacity: 0.2;
+    color: #00b3fff3;
+}
+.Handshake img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 250px;
+    border-radius: 40%;  
+}
+/*Hero Section with Background Image 
 .hero {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)), 
         url("Assist.jpg");
-        background-position: center;
+        opacity: 0.4;
+        background-position: 0%;
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 150%;
-        display: flex;
+        background-size: 100%;
+        height: 800px;
+        display:flex;
         justify-content: center;
         align-items: center;
+        position:relative;
+        top: 0px;
 }
-
 .hero-content {
-    color: #00b3fff3;
+    color: #FFD700;
     text-align: center;
-    padding: 30px;
+    padding: 200px;
 }
 
 .hero h1 {
-    font-size: 35px;
-    margin-bottom: 15px;
+    font-size: 45px;
+    margin-bottom: 40px;
 }
 
 .hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 100px;
     font-weight: 500px;
     line-height: 10px;
+}
+
+.hero .Opaque p{
+    font-size:  50px;
+    margin-top: -100px;
+    font-weight: bold;
+    opacity: 0.05;
+    color: #fff;
 }
 
 .btn {
@@ -124,7 +294,7 @@ nav ul li ul li a:hover{
 .btn:hover {
     background: #00b3fff3;
     color: #FFD700;
-}
+}*/
 
 /* Services Section */
 .services {
@@ -150,4 +320,242 @@ nav ul li ul li a:hover{
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
+    opacity: 0.5;
 }
+
+.features{
+    background: #264653;
+    position: relative;;
+    overflow: hidden;
+    height: 350px;
+}
+.features .blue {
+   margin: auto;
+    width: 100px;
+    
+}
+.features .blue img{
+    margin-left: 300px;
+    width: 600px;
+    border-radius: 10%;
+    transform: rotate(-45deg);
+    opacity: 0.5;
+    /*border: 5px solid #FFD700;*/
+
+}
+.features .Pick {
+    margin: auto;
+    width: 100px;
+}
+.features .Pick img{
+    border-radius: 10%;
+    margin-left: 200px;
+    width: 600px;
+    transform: rotate(-45deg);
+    position: relative;
+    top: -280px;
+    opacity: 0.2;
+    border: 5px solid #FFD700;
+}
+.features .Pick2 {
+    margin: auto;
+    width: 100px;
+}
+.features .Pick2 img{
+    border-radius: 10%;
+    margin-righ: 200px;
+    width: 600px;
+    transform: rotate(-45deg);
+    position: relative;
+    top: -280px;
+    opacity: 0.2;
+    border: 5px solid #FFD700;
+}
+.features h1 {
+    font-size: 36px;  /* Adjust text size */
+    color: #FFD700;  /* Change text color */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /*margin-left: 30px;*/
+}
+.features p {
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #fff;
+    /*margin-left: 20px;*/
+    text-align: center;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 0px 0;
+}
+/* Service Section */
+.section h2 {
+    font-size: 50px;
+    color: #264653;
+}
+.services-container {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.service-card h3 {
+    font-size: 30px;
+    color: #264653;
+}
+.service-card p {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 45px;
+}
+
+
+.service-card:hover {
+    transition: all 0.10s ease 0s;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f1c40f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p, 
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Contact Section */
+.footer-section.contact p {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section.contact i {
+    margin-right: 10px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f1c40f;
+}
+
+/* Newsletter */
+.footer-section form {
+    margin-top: 10px;
+}
+
+.footer-section input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.footer-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f1c40f;
+    border: none;
+    color: #222;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.footer-section button:hover {
+    background-color: #d4a60b;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    font-size: 14px;
+}
+

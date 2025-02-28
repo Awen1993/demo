@@ -393,13 +393,13 @@ nav ul li ul li a:hover{
 .section {
     padding: 60px 20px;
     text-align: center;
-    background-color: white;
-    margin: 0px 0;
+    background-color: #00b3fff3;
+    margin: auto;
 }
 /* Service Section */
 .section h2 {
     font-size: 50px;
-    color: #264653;
+    color: #FFD700;
 }
 .services-container {
     display:flex;
@@ -408,7 +408,7 @@ nav ul li ul li a:hover{
 }
 
 .service-card {
-    background-color: #fff;
+    background-color: #264653;
     padding: 20px;
     width: 30%;
     border-radius: 15px;
@@ -417,26 +417,44 @@ nav ul li ul li a:hover{
 }
 .service-card h3 {
     font-size: 30px;
-    color: #264653;
+    color: #f1c40f;
 }
 .service-card p {
     font-size: 20px;
-    color: black;
+    color: #fff;
     text-align: center;
     margin-top: 20px;
     line-height: 45px;
 }
+.service-card .More{
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #00b3fff3;
+    background: #f1c40f;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+    
+}
+.service-card .More:hover{
+    background: #00b3fff3;
+    color: #FFD700;
+    transform: scale(1.05);
+
+}
 
 
-.service-card:hover {
+/*.service-card:hover {
     transition: all 0.10s ease 0s;
     border-radius: 0px 0px 20px 0px;
-}
+}*/
 
 .service-card img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 /* Footer Styling */
 footer {

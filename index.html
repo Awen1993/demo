@@ -6,6 +6,10 @@
     <title>Iter Auxilium Services </title>
     <link rel="icon" href="Log2.png" type="png">
     <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
    <!-- <nav class="navbar-top">
@@ -14,7 +18,7 @@
             <li><a href="#services">Top Menu 2</a></li>
         </ul>
     </nav>-->
-
+<div class="back">
     <nav>
         <div class="logo">
             <p>Iter Auxilium Services</p>
@@ -28,14 +32,14 @@
             <li><a href="#"><i class="fa fa-language" aria-hidden="true"></i>Language <span class="dropdown-icon">▼</span></a></li>
         </ul>
         <ul>
-            <li><a href="#">Home <span class="dropdown-icon">▼</span></a>
+            <li><a href="#"><i class="fa-solid fa-house-user"></i>Home <span class="dropdown-icon">▼</span></a>
                 <ul>
-                   <li><a href="#">Who We Are </a></li>
-                   <li><a href="#">Mission and Vision</a></li>
+                   <li><a href="About Us.html">Who We Are </a></li>
+                   <li><a href="">Mission and Vision</a></li>
                    <li><a href="#">Our Team</a></li>
                 </ul>
             </li>
-            <li><a href="#">Services <span class="dropdown-icon">▼</span></a>
+            <li><a href="#"><i class="fa-solid fa-clone"></i>Services <span class="dropdown-icon">▼</span></a>
                  <ul>
                     <li><a href="">OUR SERVICES <i class="fas fa-caret-down"></i> </a></li>
                     <li><a href="">PRE-TRAVEL SERVICES</a></li>
@@ -44,20 +48,20 @@
                     <li><a href="">CONSULTING SERVICES</a></li>
                  </ul>
                 </li>
-                <li><a href="#">For Students <i class="fas fa-caret-down"></i></a>
+                <li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i>For Students <i class="fas fa-caret-down"></i></a>
                     <ul class="dropdown">
                         <li><a href="">CONTACT US</a></li>
                         <li><a href="">FAQs</a></li>
                         <li><a href="">REQUEST A QUOTE</a></li>
                     </ul>
                 </li>
-            <li><a href="#">Travel Insight <span class="dropdown-icon">▼</span></a>
+            <li><a href="#"><i class="fa-solid fa-plane"></i>Travel Insight <span class="dropdown-icon">▼</span></a>
                  <ul>
                     <li><a href="">BLOG</a></li>
                     <li><a href="">HISTORY</a></li>
                  </ul>
                 </li>
-            <li><a href="#"><i class="fa-solid fa-house-user"></i>Contact Us <i class="fas fa-caret-down"></i></a>
+            <li><a href="#"><i class="fa-solid fa-phone"></i>Contact Us <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="">CONTACT US</a></li>
                     <li><a href="">FAQs</a></li>
@@ -72,52 +76,43 @@
         
     </nav>
 
-    <!-- Hero Section with Banner 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Where Smooth Travel Meets Exceptional Care</h1>
-            <p>Let us handle the logistics while you enjoy your journey.</p>
-            <a href="#services" class="btn">Explore Services</a>   
-            <div class="Opaque">
-                <p>Efficient and Reliable Travel Solutions</p>
-            </div>       
-        </div>
-   </section>-->
-
-   <div class="hero">
-    <div class="hero-slider">
-        <!-- Slide 1 -->
-        <div class="hero-slide active">
-            <div class="hero-content">
-                <h1>Explore the World with Comfort & Convenience</h1>
-                <p>Your journey deserves the best experience. We provide top-notch travel solutions tailored to your needs.</p>
-                <a href="#services" class="btn">Explore Services</a>
+    <!-- Hero Section with Banner -->
+    <div class="hero">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1>Explore the World with Comfort & Convenience</h1>
+                    <p>Your journey deserves the best experience. We provide top-notch travel solutions tailored to your needs.</p>
+                    <a href="#services" class="btn">Explore Services</a>
+                </div>
             </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="hero-slide">
-            <div class="hero-content">
-                <h1>Travel Smarter, Travel Better</h1>
-                <p>Enjoy seamless travel arrangements with our premium services.</p>
-                <a href="#services" class="btn">Get Started</a>
+    
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1>Travel Smarter, Travel Better</h1>
+                    <p>Enjoy seamless travel arrangements with our premium services.</p>
+                    <a href="#services" class="btn">Get Started</a>
+                </div>
             </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="hero-slide">
-            <div class="hero-content">
-                <h1>Your Next Adventure Awaits</h1>
-                <p>Let us handle your travel needs while you focus on the experience.</p>
-                <a href="#services" class="btn">Learn More</a>
+    
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1>Your Next Adventure Awaits</h1>
+                    <p>Let us handle your travel needs while you focus on the experience.</p>
+                    <a href="#services" class="btn">Learn More</a>
+                </div>
             </div>
+    
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
-
-        <!-- Navigation Buttons -->
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
-</div>
+    
+
 
    <section class="features">
     <h1> Perfectly coordinated travel begins with planning and 
@@ -497,5 +492,6 @@
         <p>&copy; 2024 Your Company. All rights reserved.</p>
     </div>
 </footer>
+</div>
 </body>
 </html>

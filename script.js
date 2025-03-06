@@ -26,3 +26,5 @@ setInterval(nextSlide, 5000);
 
 // Show the first slide initially
 showSlide(currentSlide);
+
+

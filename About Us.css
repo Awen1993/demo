@@ -15,7 +15,8 @@
     background: rgba(0, 0, 0, 0.9); /* Adjust last value (0.1 - 0.9) for transparency */
     background-image: url(Pictures/plane.jpg);
     background-size: cover;
-    opacity: 0.1;
+    background-position: center;
+    opacity: 0.3;
 }
 .about-us {
   width: 100%;
@@ -49,6 +50,7 @@
     font-weight: bold;
 }
 .Overview{
+    background-color: #07b2f511;
     padding:20px;
     width: 100%;
     height: auto;
@@ -116,8 +118,8 @@
     width: 450px;
     float: right;
     margin-right: 5px;
-    margin-top: -270px;
-    border-radius: 50%;
+    margin-top: -320px;
+    border-radius: 20%;
     box-shadow: gray 0 0 10px;
     border: 1px solid #fff;
 }
@@ -199,6 +201,7 @@ figcaption{
     font-size: 30px;
     list-style-type: circle;
     color: #264653;
+    line-height: 2.0;  
 
 }
 .Leadership ul{
@@ -206,7 +209,7 @@ figcaption{
 }
 .Lead ul{
     margin-left: 750px;
-    margin-top: -230px;
+    margin-top: -420px;
     list-style-type: square;
 }
 .Division h1{

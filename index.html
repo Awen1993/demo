@@ -6,6 +6,10 @@
     <title>Iter Auxilium Services </title>
     <link rel="icon" href="Log2.png" type="png">
     <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
    <!-- <nav class="navbar-top">
@@ -23,19 +27,21 @@
             </div>
         </div>
         <ul class="support">
-            <li><a href="#">24hr Support</a></li>
-            <li><a href="#">Member Login</a></li>
-            <li><a href="#">Language <span class="dropdown-icon">▼</span></a></li>
+            <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>24hr Support</a></li>
+            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Member Login</a></li>
+            <li><a href="#"><i class="fa fa-language" aria-hidden="true"></i>Language <span class="dropdown-icon">▼</span></a></li>
         </ul>
         <ul>
-            <li><a href="#">Home <span class="dropdown-icon">▼</span></a>
+            <li><a href="Pages/Home.html">
+                <i class="fa fa-home" aria-hidden="true"></i>Home <span class="dropdown-icon">▼</span></a>
                 <ul>
                    <li><a href="#">Who We Are </a></li>
                    <li><a href="#">Mission and Vision</a></li>
                    <li><a href="#">Our Team</a></li>
                 </ul>
             </li>
-            <li><a href="#">Services <span class="dropdown-icon">▼</span></a>
+            <li><a href="Pages/Service.html">
+                <i class="fa fa-clone" aria-hidden="true"></i>Services <span class="dropdown-icon">▼</span></a>
                  <ul>
                     <li><a href="">OUR SERVICES <i class="fas fa-caret-down"></i> </a></li>
                     <li><a href="">PRE-TRAVEL SERVICES</a></li>
@@ -44,20 +50,23 @@
                     <li><a href="">CONSULTING SERVICES</a></li>
                  </ul>
                 </li>
-                <li><a href="#">For Students <i class="fas fa-caret-down"></i></a>
+                <li><a href="Pages/For Student.html">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>For Students <i class="fas fa-caret-down"></i></a>
                     <ul class="dropdown">
                         <li><a href="">CONTACT US</a></li>
                         <li><a href="">FAQs</a></li>
                         <li><a href="">REQUEST A QUOTE</a></li>
                     </ul>
                 </li>
-            <li><a href="#">Travel Insight <span class="dropdown-icon">▼</span></a>
+            <li><a href="Pages/Travel Insight.html">
+                <i class="fa fa-plane" aria-hidden="true"></i>Travel Insight <span class="dropdown-icon">▼</span></a>
                  <ul>
                     <li><a href="">BLOG</a></li>
                     <li><a href="">HISTORY</a></li>
                  </ul>
                 </li>
-            <li><a href="#">Contact Us <i class="fas fa-caret-down"></i></a>
+            <li><a href="Pages/Contact.html">
+                <i class="fa fa-phone" aria-hidden="true"></i>Contact Us <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="">CONTACT US</a></li>
                     <li><a href="">FAQs</a></li>
@@ -84,18 +93,41 @@
         </div>
    </section>-->
 
-   <section class="hero">
-    
-    <div class="hero-content">
-        <h1>Explore the World with Comfort & Convenience</h1>
-        <p>Your journey deserves the best experience. 
-            We provide top-notch travel solutions tailored to your needs.</p>
-        <a href="#services" class="btn">Explore Services</a>
-    <!--<div class="Opaque">
-        <p>Efficient and Reliable Travel Solutions</p></div>
+   <div class="hero">
+    <div class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="hero-slide active">
+            <div class="hero-content">
+                <h1>Explore the World with Comfort & Convenience</h1>
+                <p>Your journey deserves the best experience. We provide top-notch travel solutions tailored to your needs.</p>
+                <a href="#services" class="btn">Explore Services</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Travel Smarter, Travel Better</h1>
+                <p>Enjoy seamless travel arrangements with our premium services.</p>
+                <a href="#services" class="btn">Get Started</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Your Next Adventure Awaits</h1>
+                <p>Let us handle your travel needs while you focus on the experience.</p>
+                <a href="#services" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
 </div>
-<div class="Handshake"><img src="Handshake.jpg" alt="Handshake"></div> -->
-</section>
+
    <section class="features">
     <h1> Perfectly coordinated travel begins with planning and 
         reliable support</h1>
@@ -107,15 +139,15 @@
          a wide range of services, including transportation <br> provide coordination, itinerary customization,
          accommodation booking, concierge assistance, and emergency support.</p>
         <!--<div class="blue"><img src="blue.jpg" alt="Help"></div>--> 
-      <div class="Pick"><img src="Travel1.jpg" alt="Help"></div> 
-      <div class="Pick2"><img src="Travel4.jpg" alt="Help"></div> 
+      <div class="Pick"><img src="Pictures/Travel1.jpg" alt="Help"></div> 
+      <div class="Pick2"><img src="Picture/Travel4.jpg" alt="Help"></div> 
 </section>
  <!-- Services Section -->
  <section id="services" class="section">
     <h2>Our Services</h2>
     <div class="services-container">
         <div class="service-card">
-            <img src="Travel2.jpg" alt="Pre-Trip">
+            <img src="Pictures/Travel2.jpg" alt="Pre-Trip">
             <h3> Pre-Trip Services <br> (Home Country Services)</h3>
             <p>IAS provide infallible Pre-Trip Services to make your journey as 
                 comfortable as possible. Our Pre- Trips services include Visa and passport assistance,
@@ -126,14 +158,14 @@
                <div class="More"><a href="full-article.html">Find Out More </a></div> 
         </div>
         <div class="service-card">
-            <img src="itinerary4.jpg" alt="Itinerary Planning">
+            <img src="Pictures/itinerary4.jpg" alt="Itinerary Planning">
             <h3>Itinerary Planning</h3>
             <p>Customized travel itineraries designed to suit your preferences 
                 and ensure you make the most of your trip, with a focus on time-saving and enjoyment.</p>
                 <div class="More"><a href="full-article.html">Find Out More </a></div> 
         </div>
         <div class="service-card">
-            <img src="concierge.jpg" alt="Concierge Services">
+            <img src="Pictures/concierge.jpg" alt="Concierge Services">
             <h3>Concierge Services</h3>
             <p>Exclusive concierge services for business and leisure travelers, 
                 including reservations, personalized assistance, and special requests.</p>
@@ -142,7 +174,7 @@
     </div>
     <div class="services-container">
         <div class="service-card">
-            <img src="Accomodation1.jpg" alt="Accommodation">
+            <img src="Pictures/Accomodation1.jpg" alt="Accommodation">
             <h3>Accommodation</h3>
             <p> We provide  hassle-free and reliable accommodation solutions tailored to your needs, 
                 ensuring a comfortable and stress-free stay. Whether you’re looking for 
@@ -152,7 +184,7 @@
                  <div class="More"><a href="full-article.html">Find Out More </a></div> 
         </div>
             <div class="service-card">
-                <img src="Car.jpg" alt="Transportation">
+                <img src="Pictures/Car.jpg" alt="Transportation">
                 <h3>Transportation</h3>
                 <p>Worried about how you get to the Airport? 
                     Let us handle your transportation during your trip. Our Transportation Service takes Care
@@ -162,7 +194,7 @@
                     <div class="More"><a href="full-article.html">Find Out More </a></div>  
             </div>
             <div class="service-card">
-                <img src="TTPS.jpg" alt="Teacher Training Practicum Services (TTPS)">
+                <img src="Pictures/TTPS.jpg" alt="Teacher Training Practicum Services (TTPS)">
                 <h3>Teachers Training Practicum Services (TTPS)<br>Bildung Bridge Program
                 </h3>
                 <p>We provide seamless and reliable 
@@ -188,7 +220,7 @@
     <div class="More"><a href="full-article.html">Find Out More </a></div> 
 </div>
  <div class="Profile">
-    <img src="Teacher1.jpg" alt="Bildung Bridge">
+    <img src="Pictures/Teacher1.jpg" alt="Bildung Bridge">
  </div>
 </div>
 <section class="Bildung">
@@ -196,7 +228,7 @@
         <h2>Bildung Bridge Services</h2>
     </div>
     <figure class="Bridge">
-     <img src="Teacher 2.jpg" alt="Teaching Placement">
+     <img src="Pictures/Teacher 2.jpg" alt="Teaching Placement">
      <figcaption><h3>Teaching Placement</h3></figcaption>
      <p>IAS's Bildung Bridge program places prospect teacher in primary, 
         junior high, or senior high schools across Ghana, 
@@ -206,7 +238,7 @@
        <div class="More"><a href="full-article.html">Find Out More </a></div> </p>
     </figure>
     <figure class="Bridge">
-        <img src="satisfied-teacher.jpg" alt="Mentorship & Training Support">
+        <img src="Pictures/satisfied-teacher.jpg" alt="Mentorship & Training Support">
         <figcaption><h3>Mentorship & Training Support</h3></figcaption>
         <p>Participants will receive guidance and mentorship from experienced Ghanaian educators.
             Ongoing workshops will be provided to introduce different teaching methods and 
@@ -214,7 +246,7 @@
           <div class="More"><a href="full-article.html">Find Out More </a></div> </p>
        </figure>
        <figure class="Bridge">
-        <img src="Acc.jpg" alt="Accommodation & Logistics">
+        <img src="Pictures/Acc.jpg" alt="Accommodation & Logistics">
         <figcaption><h3>Accommodation & Logisticst</h3></figcaption>
         <p>Housing options include host family stays, teacher residences, or shared trainee accommodations.
             Schools and host communities will support trainees in adjusting to local life.
@@ -223,7 +255,7 @@
           <div class="More"><a href="full-article.html">Find Out More </a></div> </p>
        </figure>
        <figure class="Bridge">
-        <img src="itinerary2.jpg" alt="Transportation">
+        <img src="Pictures/itinerary2.jpg" alt="Transportation">
         <figcaption><h3>Transportation</h3></figcaption>
         <p>Worried about how you get to the Airport? Let us handle your transportation during your trip. 
             Our Transportation Service takes care of your transit to the Airport and pickup to your Hotel. 

@@ -1,0 +1,217 @@
+.Background{
+    position: relative;
+    padding: auto;
+    margin: auto;
+    background-image:url(Pictures/plane.jpg)no-repeat center center ;
+
+}
+.Background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Adjust last value (0.1 - 0.9) for transparency */
+    background-image: url(Pictures/plane.jpg);
+    background-size: cover;
+    opacity: 0.1;
+}
+.about-us {
+  width: 100%;
+  line-height: 30px;
+  position: relative;
+  height: 10vh;
+}
+.container {
+    text-align: center;
+    position: relative;
+    
+
+}
+.about-us .container ul{
+    position: relative;
+    list-style: none;
+}
+.about-us .container ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+.about-us .container ul li a{
+    font-size: 23px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFD700;
+    font-weight: bold;
+}
+.Overview{
+    padding:20px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+    border-radius: 0 0 0 20%;
+}
+.Overview h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #FFD700;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.Overview h2{
+    font-size: 35px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #264653;
+    margin-left: 100px;
+}
+.Overview p{
+    margin-left: 100px;
+    color: #264653;
+    font-size: 20px;
+    margin-top: 30px;
+} 
+.Mission{
+    padding:20px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 80px;
+}
+.Miss img{
+    width: 300px;
+    margin-left: 30px;
+    border-radius: 0 20px;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+}
+.Mission .M{
+    margin-left: 450px;
+    margin-top: -400px;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+    border-radius: 0 15% 0 0;
+    
+}
+.Mission h1{
+    font-size: 35px;
+    text-align: center;
+    color: #264653;
+}
+.Mission p{
+    font-size: 20px;
+    margin-top: 45px;
+    text-align: center;
+    color: #264653;
+}
+
+.Vision img{
+    width: 450px;
+    float: right;
+    margin-right: 5px;
+    margin-top: -270px;
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+}
+.Vis {
+    margin-right: 500px;
+    margin-top: 150px;
+    line-height: 1.8;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+    border-radius: 20% 0 20% 0;
+}
+.Management{
+    padding:20px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 80px;
+}
+.Management .sub-management{
+    margin: auto;
+    position: relative;
+}
+.Management h1{
+    font-size: 40px;
+    margin-left: 150px;
+    color: #264653;
+    font-style: italic;
+
+}
+.Management p{
+    font-size: 30px;
+    text-align: center;
+    color: #264653;
+    margin-top: 20px;
+    font-weight: bold;
+}
+figure{
+   float: left;
+    padding: 20px;
+    margin-top: 40px;
+    justify-content: center; 
+    align-items: center;
+    
+}
+figure img{ 
+    float: left;
+    width: 300px;
+    margin-left:  200px;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+    border-radius: 20% 0 20% 0;
+}
+figcaption{
+    text-align: center; /* Centers the caption */
+    font-style: italic; /* Makes text italic */
+    margin-top: 200px;
+    clear: both;
+    display: block;
+    margin-left: 150px;
+    line-height: 1.3;
+    font-size: 1.3rem;
+    color: #264653;
+}
+.Mat img{
+    width: 230px;
+}
+.Mat img{
+    margin-left: 170px;
+}
+.Team{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+.Division{
+    width: 100%;
+    margin-left: 100px;
+    height: 80vh;
+    font-size: 30px;
+    list-style-type: circle;
+    color: #264653;
+
+}
+.Leadership ul{
+    list-style-type: circle;
+}
+.Lead ul{
+    margin-left: 750px;
+    margin-top: -230px;
+    list-style-type: square;
+}
+.Division h1{
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}

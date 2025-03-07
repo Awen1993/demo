@@ -19,8 +19,9 @@ body{
    /* background-image: url(Pictures/pexels-podnar2018-1424246.jpg) no-repeat center center ;
     background-size: cover;*/
 }
-.logo.fa{
-    margin-right:  10px;
+nav .fa{
+    margin-right: 8px;
+    size: 12px;
 }
 
 nav {
@@ -67,16 +68,18 @@ nav ul li {
     float: left;
     list-style: none;
     position: relative;
+    font-size: 20px;
 }
 
 nav ul li a {
     font-size: 15px;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 5px 5px;
     color: #FFD700;
     text-decoration: none;
     display: block;
     font-family: sans-serif;
+    
 }
 
 nav ul li a:hover {
@@ -118,10 +121,7 @@ nav ul li ul li a:hover {
     background: #00b3fff3;
     color: #FFD700;
 }
-nav .fa{
-    margin-right: 8px;
-    size: 12px;
-}
+
 
 /* Hero Section */
 .hero {

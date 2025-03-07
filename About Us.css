@@ -474,10 +474,11 @@ nav .fa{
 }
 
 .about-us {
+    padding: 20px;
   width: 100%;
   line-height: 30px;
   position: relative;
-  height: 10vh;
+  height: 15vh;
   
 }
 .container {

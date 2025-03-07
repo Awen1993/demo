@@ -182,18 +182,18 @@ nav .fa{
 
 /* Heading */
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #003366;
+    margin-bottom: 100px;
+    color: #FFD700;
     font-weight: bold;
 }
 
 /* Subtext */
 .hero-content p {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    color: #003366;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #FFD700;
     font-weight: bold;
 }
 

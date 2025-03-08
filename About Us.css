@@ -163,20 +163,9 @@ nav .fa{
     text-align: center;
     color: #003366;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
     background-size: cover;
     background-position: center;
-}
-.hero-slide::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit; /* Inherits the background image */
-    opacity: 0.2; /* Reduces background opacity */
-    z-index: -1;
 }
 
 /* Active Slide */
@@ -186,21 +175,34 @@ nav .fa{
 
 /* Background Images for Each Slide */
 .hero-slide:nth-child(1) {
-    background-image: url('Pictures/Teacher.jpg');
-    
+    background-image: url('Pictures/accra-1947665_1280.jpg');
 }
 .hero-slide:nth-child(2) {
-    background-image: url('Pictures/medium-shot-woman-traveling-with-mask.jpg');
-    
+    background-image: url('Pictures/accra-1947674_1280.jpg');
 }
 .hero-slide:nth-child(3) {
-    background-image: url('Pictures/smiling.jpg');
-    
+    background-image: url('Pictures/culture-1475550_1280.jpg');
 }
-
-/* Active Slide */
-.hero-slide.active {
-    opacity: 1;
+.hero-slide:nth-child(4) {
+    background-image: url('Pictures/butre-1936882_1280.jpg');
+}
+.hero-slide:nth-child(5) {
+    background-image: url('Pictures/yoel-winkler-oNCvmOvKjxo-unsplash.jpg');
+}
+.hero-slide:nth-child(6) {
+    background-image: url('Pictures/ifeoluwa-a--CgUhaShACE-unsplash.jpg');
+}
+.hero-slide:nth-child(7) {
+    background-image: url('Pictures/ifeoluwa-a-0qz48eDvNHo-unsplash.jpg');
+}
+.hero-slide:nth-child(8) {
+    background-image: url('Pictures/medium-shot-woman-traveling-with-mask.jpg');
+}
+.hero-slide:nth-child(9) {
+    background-image: url('Pictures/julianna-corbett-R3IYAFLDX0I-unsplash.jpg');
+}
+.hero-slide:nth-child(10) {
+    background-image: url('Pictures/Travel3.jpg');
 }
 
 /* Hero Content */
@@ -216,7 +218,6 @@ nav .fa{
     font-weight: bold;
     margin-bottom: 100px;
     color: #FFD700;
-    font-weight: bold;
 }
 
 /* Subtext */
@@ -264,6 +265,19 @@ nav .fa{
 
 .prev:hover, .next:hover {
     background: rgba(0, 0, 0, 0.8);
+}
+
+/* For the Slide Transitions */
+.hero-slider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transition: transform 1s ease-in-out; /* Transition effect for sliding */
+}
+
+/* Slide transition */
+.hero-slider .hero-slide {
+    transition: opacity 1s ease-in-out; /* Fading transition between slides */
 }
 
 /* Responsive Design */
@@ -590,6 +604,7 @@ nav .fa{
     width: 100%;
     padding: 10%;
     padding-top: 5%;
+    position: absolute;
 }
 .Mission .Principles .Core h2{
    margin-bottom: 0px;
@@ -606,13 +621,11 @@ nav .fa{
     line-height: 70px;
 }
 .Core-image img{
-    width: 600px;
+    width: 700px;
     float: center;
     margin-left: 550px;
-    margin-top: -600px;
-    border-radius: 20%;
-    box-shadow: gray 0 0 10px;
-   transform: rotate(40deg);
+    margin-top: 20px;
+    border-radius:20px 0  0 30%  ;
    opacity: 0.9;
 }
 
@@ -620,13 +633,13 @@ nav .fa{
     padding: 20px;
     width: 100%;
     margin-top: -300px;
+    position: absolute;
 
 }
 .Core-back-image img{
     width: 800px;
     float: right;
     margin-right: -500px;
-   
    transform: rotate(-30deg);
    opacity: 0.5;
    overflow: hidden;
@@ -758,6 +771,64 @@ figcaption{
 .Values .Core p {
    margin-top: 20px;
 }
+
+.Choose{
+    padding: 40px;
+    width: 100%;
+    margin-top: 50px;
+    color: #264653;
+}
+.Choose h1{
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.Choose h2{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.Choose p{
+ padding-bottom: 25px;
+ font-size: 20px;
+}
+.Choose .first{
+    margin-right: 500px;
+    margin-bottom: 100px;
+
+}
+
+
+.Choose .second{
+    margin-left: 500px;
+}
+
+.Choose .Choose-image{
+    padding: 20px; 
+    position: relative;  
+}
+
+.Choose .Choose-second-image{
+    padding: 20px; 
+    position: relative;  
+}
+
+.Choose .Choose-image img{
+    width: 1000px;
+    margin-left: 700px;
+    margin-top: -800px;
+}
+
+.Choose .Choose-second-image img{
+    width: 1200px;
+    margin-left: -1250px;
+    margin-top: -1500px;
+}
+    
 
 /* Footer Styles */
 footer {

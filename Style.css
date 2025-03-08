@@ -152,9 +152,14 @@ nav ul li ul li a:hover {
     text-align: center;
     color: #003366;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
     background-size: cover;
     background-position: center;
+}
+
+/* Active Slide */
+.hero-slide.active {
+    opacity: 1;
 }
 
 /* Background Images for Each Slide */
@@ -162,15 +167,31 @@ nav ul li ul li a:hover {
     background-image: url('Pictures/AI.jpg');
 }
 .hero-slide:nth-child(2) {
-    background-image: url('Pictures/satisfied-teacher.jpg');
+    background-image: url('Pictures/Accomodation1.jpg');
 }
 .hero-slide:nth-child(3) {
-    background-image: url('Pictures/Hand.jpg');
+    background-image: url('Pictures/AdobeStock_227495118_Preview.jpeg');
 }
-
-/* Active Slide */
-.hero-slide.active {
-    opacity: 1;
+.hero-slide:nth-child(4) {
+    background-image: url('Pictures/AdobeStock_66099879_Preview.jpeg');
+}
+.hero-slide:nth-child(5) {
+    background-image: url('Pictures/accra-1947674_1280.jpg');
+}
+.hero-slide:nth-child(6) {
+    background-image: url('Pictures/AdobeStock_66099773_Preview.jpeg');
+}
+.hero-slide:nth-child(7) {
+    background-image: url('Pictures/AdobeStock_227495118_Preview.jpeg');
+}
+.hero-slide:nth-child(8) {
+    background-image: url('Pictures/AdobeStock_946622950_Preview.jpeg');
+}
+.hero-slide:nth-child(9) {
+    background-image: url('Pictures/AdobeStock_243630340_Preview.jpeg');
+}
+.hero-slide:nth-child(10) {
+    background-image: url('Pictures/AdobeStock_66099821_Preview.jpeg');
 }
 
 /* Hero Content */
@@ -186,7 +207,6 @@ nav ul li ul li a:hover {
     font-weight: bold;
     margin-bottom: 100px;
     color: #FFD700;
-    font-weight: bold;
 }
 
 /* Subtext */
@@ -194,7 +214,6 @@ nav ul li ul li a:hover {
     font-size: 2rem;
     margin-bottom: 25px;
     color: #FFD700;
-    font-weight: bold;
 }
 
 /* CTA Button */
@@ -236,6 +255,19 @@ nav ul li ul li a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
+/* For the Slide Transitions */
+.hero-slider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transition: transform 1s ease-in-out; /* Transition effect for sliding */
+}
+
+/* Slide transition */
+.hero-slider .hero-slide {
+    transition: opacity 1s ease-in-out; /* Fading transition between slides */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-content h1 {
@@ -251,7 +283,6 @@ nav ul li ul li a:hover {
         padding: 10px 20px;
     }
 }
-
 
 /* Search Bar Styling */
 .search-form {

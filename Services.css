@@ -1,0 +1,632 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(Pictures/pexels-griffinw-3654864.jpg) ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
+}
+/*body::before{ 
+  content: "";
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Pictures/pexels-griffinw-3654864.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -5; /* Send it behind other content 
+}*/
+
+nav .fa{
+    margin-right: 8px;
+    size: 12px;
+}
+
+nav {
+    width: 100%;
+    height: 180px;
+    line-height: 45px;
+    padding: 0;
+    background-image: url(Pictures/blue.jpg);
+    position: relative;
+    z-index: 1000;
+}
+
+nav .logo p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFD700;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    position: relative;
+    margin-left: 60px;
+    top: 20px;
+}
+
+nav .Tag p {
+    font-size: 13px;
+    float: left;
+    text-transform: uppercase;
+    margin-left: 65px;
+    position: absolute;
+    top: 50px;
+}
+
+nav ul {
+    float: right;
+    top: 50px;
+    position: relative;
+    z-index: 1050;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    font-size: 20px;
+}
+
+nav ul li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    color: #FFD700;
+    text-decoration: none;
+    display: block;
+    font-family: sans-serif;
+    
+}
+
+nav ul li a:hover {
+    background: #00b3fff3;
+    color: #FFD700;
+    transition: all 0.10s ease-in-out;
+    border-radius: 0 0 20px 0;
+}
+
+/* Fixed Dropdown Menu */
+nav ul li ul {
+    position: absolute;
+    display: none;
+    background-color: #003366;
+    border-radius: 0 0 20px 0;
+    z-index: 1050;
+    width: 190px;
+    padding: 10px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    line-height: 2;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+nav ul li ul li a {
+    padding: 5px;
+    display: block;
+    text-align: left;
+}
+
+nav ul li ul li a:hover {
+    background: #00b3fff3;
+    color: #FFD700;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Slider Wrapper */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Individual Slides */
+.hero-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #003366;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Active Slide */
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* Background Images for Each Slide */
+.hero-slide:nth-child(1) {
+    background-image: url('Pictures/AI.jpg');
+}
+.hero-slide:nth-child(2) {
+    background-image: url('Pictures/Accomodation1.jpg');
+}
+.hero-slide:nth-child(3) {
+    background-image: url('Pictures/satisfied-teacher.jpg');
+}
+.hero-slide:nth-child(4) {
+    background-image: url('Pictures/AdobeStock_66099879_Preview.jpeg');
+}
+.hero-slide:nth-child(5) {
+    background-image: url('Pictures/accra-1947674_1280.jpg');
+}
+.hero-slide:nth-child(6) {
+    background-image: url('Pictures/AdobeStock_66099773_Preview.jpeg');
+}
+.hero-slide:nth-child(7) {
+    background-image: url('Pictures/Assist.jpg');
+}
+.hero-slide:nth-child(8) {
+    background-image: url('Pictures/AdobeStock_946622950_Preview.jpeg');
+}
+.hero-slide:nth-child(9) {
+    background-image: url('Pictures/independence-square-2419577_1280.jpg');
+}
+.hero-slide:nth-child(10) {
+    background-image: url('Pictures/AdobeStock_66099821_Preview.jpeg');
+}
+
+/* Hero Content */
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Heading */
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 100px;
+    color: #FFD700;
+}
+
+/* Subtext */
+.hero-content p {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #FFD700;
+}
+
+/* CTA Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.5rem;
+    color: #00b3ff;
+    background: #FFD700;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #00b3ff;
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* For the Slide Transitions */
+.hero-slider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transition: transform 1s ease-in-out; /* Transition effect for sliding */
+}
+
+/* Slide transition */
+.hero-slider .hero-slide {
+    transition: opacity 1s ease-in-out; /* Fading transition between slides */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Search Bar Styling */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 10px;
+    border: none;
+    background: #00b3fff3;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+.search-form button:hover {
+    background: #fff;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure all slides are stacked on top of each other */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Each Slide */
+.hero-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    opacity: 0;  /* Hidden by default */
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Show the active slide */
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FFD700;
+    color: #00b3fff3;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.Services{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    position: relative;
+}
+/*.Services::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(Pictures/tourist-carrying-baggage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;   
+}*/
+.Services .Pre-Trip{
+    padding: 	20px;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    font-size: 15px;
+}
+.Services .Pre-Trip h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.Services .Pre-Trip h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.Services .Pre-Trip h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.Services .Pre-Trip p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.Services .Pre-Trip {
+    margin-bottom: 50px;
+}
+
+.Services .Pre {
+    margin-bottom: 100px;
+}
+
+
+.Services .Pre-Trip .Pre h2{
+    font-style: italic;
+    font-size: 15px;
+}
+.Services .Pre-Trip .Sub-Trip{
+    text-align: left;
+    margin-left: 500px ;
+    line-height: 40px;
+}
+.foreground {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 450px;
+    height: auto;
+    margin-top: 350px;
+    margin-bottom: 60px;
+  }
+
+.Consultation{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 200px;
+    display: flex;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+}
+
+.Consultation .Travel{
+    width: 100%;
+    line-height: 35px;
+}
+.Consultation .Travel img{
+    width: 550px;
+    margin-top: 20px ;
+    border-radius: 10%;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+}
+.Consultation .Travel figcaption{
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+.Consultation .Travel p{
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.Consultation .Travel .Cont ul li{
+    list-style-type: square;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.Consultation .Travel .Cont ul li::marker{
+    color: #000; /* Change bullet color */
+    font-size: 2em; 
+}
+
+
+  /* Footer Styles */
+footer {
+    /*background: url(Pictures/mountains.jpg);  /* Transparent Background */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+/* Footer Links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD700;
+}
+
+/* Contact Form */
+.get-in-touch form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.checkbox label {
+    margin-left: 10px;
+}
+
+.send-button {
+    background: #FFD700;
+    color: #003366;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.send-button:hover {
+    background: #ffffff;
+    color: #003366;
+}
+
+/* Social Media Icons */
+.social-icons {
+    text-align: center;
+    margin: 10px 0;
+    color: #000;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    color: #FFD700;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+

@@ -10,6 +10,7 @@ body{
     background-position: center;
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: overlay;
+    overflow-x: hidden;
 }
 /*body::before{ 
   content: "";
@@ -450,8 +451,7 @@ nav ul li ul li a:hover {
     left: 50px;
     width: 450px;
     height: auto;
-    margin-top: 350px;
-    margin-bottom: 60px;
+    margin-top: 450px;
   }
 
 .Consultation{
@@ -495,6 +495,167 @@ nav ul li ul li a:hover {
     color: #000; /* Change bullet color */
     font-size: 2em; 
 }
+.Transportation{
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    padding: 40px;
+    display: flex;
+}
+.Transportation .Service{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.Transportation .Service p{
+    height: 60px;
+    text-align: left;
+    padding-right: 40px;
+}
+.Transportation .Service h3{
+    font-size: 15px;
+    font-style: italic;
+    height: 30px;
+}
+.Transportation .Service .List ul li{
+     list-style-type: square;
+     margin-left: 100px;
+     
+}
+.Transportation .Service .List ul li::marker{
+    color: #000; /* Change bullet color */
+    font-size: 2em; 
+}
+.Transportation .Service h2{
+    font-size: 25px;
+    height: 40px;
+}
+.Departure img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: grey 0 0 10px;
+} 
+
+.Dep{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    position: relative;
+    line-height: 30px;  
+    margin-top: 50px;
+    border: 1px solid #fff;
+    box-shadow: grey 0 0 10px;
+    border-radius: 20% 20% 0 0;
+}
+.Transportation .Dep figure p{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.Transportation .Dep figure figcaption{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.Dep .Arrival{
+    width: 100%;
+    margin-top: 120px;
+    padding-left: 50px;
+    border: 1px solid #fff;
+    box-shadow: grey 0 0 10px;
+}
+.Dep .Arrival ul li{
+    list-style-type: square;
+}
+.Dep .Arrival ul li::marker{
+    color: #000;
+    font-size: 2em;
+}
+
+/*IAS Accommodation Services*/
+.Accommodation{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.Accommodation .Service{
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.Accommodation .Service .Acc{
+    width: 100%;
+}
+
+.Accommodation .Service .Acc h2{
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.Accommodation .Service .Acc h1	{
+    font-size: 20px;
+}
+
+.Accommodation .Service .Acc p{
+    margin-top: 20px;
+}
+
+.Accommodation .Service .Sub-Acc{
+    width: 100%;
+    height: auto;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+}
+.Accommodation .Service .Sub-Acc .Sub{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    text-align: left;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+.Accommodation .Service .Sub-Acc .Sub h2{
+    font-size: 20px;
+}
+
+.Accommodation .Service .Sub-Acc .Sub{
+    margin-top: 150px;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+}
+
+.Accommodation .Service .Sub-Acc .Sub h2{
+    margin-top: 0px;
+}
+.Accommodation .Service .Sub-Acc .Sub  p{
+    margin-top: 20px;
+}
+.Accommodation .Service .Sub-Acc .Sub ul{
+    padding-left: 60px;
+}
+.Accommodation .Service .Sub-Acc .Sub ul li{
+    list-style-type: square;
+    
+}
+.Accommodation .Service .Sub-Acc .Sub img{
+    width: 550px;
+    height: 550px;
+    margin-top: -330px;
+    float: right;   
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px; 
+    border: 2px solid #fff;
+}
+
+
 
 
   /* Footer Styles */

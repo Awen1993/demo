@@ -499,7 +499,6 @@ nav ul li ul li a:hover {
     width: 100%;
     padding: 20px;
     height: auto;
-    padding: 40px;
     display: flex;
 }
 .Transportation .Service{
@@ -706,7 +705,137 @@ nav ul li ul li a:hover {
 
 
 
+/*Itinerary Planning Services*/
+.Itinerary {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
 
+}
+ .Plan{
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.Sub h2{
+    font-size: 25px;
+}
+
+.Sub p{
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 18px;
+}
+ .Sub h3{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Plan .Itinerary figure {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 40px;
+    display:block;
+    border: 1px solid #fff;
+    border-radius: 10% 10% 0 0;
+    box-shadow: gray 0 0 10px;
+}
+
+.Plan .Itinerary figure img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: gray 0 0 10px;
+    
+}
+
+.Plan .Itinerary figure figcaption{
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 10% 10% 0 0;
+    box-shadow: gray 0 0 10px;
+
+}
+.Plan .Itinerary figure figcaption h2{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.Plan .Itinerary figure figcaption p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.Plan .Itinerary figure figcaption ul{
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: left;
+}
+
+/*Contact*/
+.Contact{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    /*background: #f5f5f5;*/   
+    border: 1px solid #fff;
+    box-shadow: gray 0 0 10px;
+    border-radius: 0%;
+}
+.Contact h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+}
+
+.form-check{
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.bt{
+    display: inline;
+    color: #003366;
+    background: #FFD700;
+    padding: 10px 20px;
+    border-radius: 20%;
+    box-shadow: gray 0 0 10px;
+    border: 1px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.bt::hover{
+    background: #003366;
+    color: #FFD700;
+}
   /* Footer Styles */
 footer {
     /*background: url(Pictures/mountains.jpg);  /* Transparent Background */

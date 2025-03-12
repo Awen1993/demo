@@ -643,7 +643,7 @@ nav ul li ul li a:hover {
     padding-left: 60px;
 }
 .Accommodation .Service .Sub-Acc .Sub ul li{
-    list-style-type: square;
+    list-style-type: none;
     
 }
 .Accommodation .Service .Sub-Acc .Sub img{
@@ -651,6 +651,54 @@ nav ul li ul li a:hover {
     height: 550px;
     margin-top: -330px;
     float: right;   
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px; 
+    border: 2px solid #fff;
+}
+
+.Accommodation .Service .Sub-sub-Acc{
+    width: 100%;
+    height: auto;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid #fff;
+    margin-top: 50px;
+}
+.Accommodation .Service .Sub-sub-Acc .Sub{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    text-align: justify;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+    box-shadow: gray 0 0 10px;
+    border: 2px solid #fff;
+    border-radius: 50% 10px 10px 50%;
+   
+}
+.Accommodation .Service .Sub-sub-Acc .Sub h2{
+    font-size: 20px;
+    margin-left: 600px;  
+    margin-top: 0px; 
+}
+
+.Accommodation .Service .Sub-sub-Acc .Sub  p{
+    margin-top: 20px;
+    margin-left: 600px;  
+}
+.Accommodation .Service .Sub-sub-Acc .Sub ul{
+    padding-left: 60px;
+    margin-left: 600px;  
+}
+.Accommodation .Service .Sub-sub-Acc .Sub ul li{
+    list-style-type: none;
+    
+}
+.Accommodation .Service .Sub-sub-Acc .Sub img{
+    width: 550px;
+    height: 550px;
+    margin-top: -330px;
+    float: left;   
     border-radius: 50%;
     box-shadow: gray 0 0 10px; 
     border: 2px solid #fff;

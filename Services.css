@@ -721,17 +721,18 @@ nav ul li ul li a:hover {
     text-align: center;
 }
 
-.Sub h2{
+.Plan .Sub h2{
     font-size: 25px;
 }
 
-.Sub p{
+.Plan .Sub p{
     text-align: center;
     margin: 20px;
     font-size: 18px;
     line-height: 18px;
 }
- .Sub h3{
+
+.Plan .Sub h3{
     text-align: center;
     margin-top: 20px;
 }

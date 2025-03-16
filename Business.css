@@ -476,10 +476,9 @@ nav ul li ul li a:hover {
     text-align: left;
     font: outline;
     font-family: 'Raleway', sans-serif;
-    padding-left: 600px;
-    
-    
+    padding-left: 600px;    
 }
+
 .Emergency .Manager .Manage p{
     margin-top: 20px;
     line-height: 25px;
@@ -541,6 +540,9 @@ nav ul li ul li a:hover {
     margin-bottom: 20px;
 
 }
+.sec{
+    margin-top: 100px;
+}
 
 /* Service Cards */
 .service-card {
@@ -553,11 +555,51 @@ nav ul li ul li a:hover {
     vertical-align: top;
     transition: transform 0.3s ease;
 }
-.services  .service-card img{
-    width: 200px;
-   padding: 0%;
-   
+.Car{
+    width: 100%;
+    padding-right: 40px;
+    display: inline; 
 }
+
+
+.card {
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: transform 0.3s ease;
+    border: 1px solid #fff;
+    box-shadow: #444 0 0 10px;
+}
+.Car .card ul li{
+    list-style: none;
+}
+.Car .card img{
+    width: 500px;
+    margin:0 0 10px 380px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: #444 0 0 10px; 
+}
+
+.Car .card h3{
+   text-align: center;
+   font-size: 35px;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+.Car .card ul{
+    margin: 20px;
+    line-height: 30px;
+}
+
+.Car .card p{
+    font-size: 20px;
+    margin-top: 20px;
+    
+ }
 .services  .image1 img{
     width: 220px;
    padding: 0%;

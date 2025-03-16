@@ -377,6 +377,7 @@ nav ul li ul li a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
+/*Our Corporate Service*/
 .Corporate{
     width: 100%;
     padding: 20px;
@@ -393,6 +394,8 @@ nav ul li ul li a:hover {
 .Corporate .Sub-Corporate .Sub h2{
     margin-top: 20px;
     text-align: center;
+    font-size: 45px;
+    font-weight: normal;
 }
 .Corporate .Sub-Corporate .Sub h3{
     margin-top: 20px;
@@ -401,15 +404,219 @@ nav ul li ul li a:hover {
     font-style: italic;
 }
 .Corporate .Sub-Corporate .Sub p{
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 20px;
     text-align: center;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 18px;
 }
+
+/*Corporate Manager*/
+.Travel{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 70px 0;
+    border: 1px solid #fff;
+    box-shadow: #777 0 0 25px;
+    margin-top: 20px;
+
+}
+.Travel .Manager{
+    padding: 20px;
+    gap: 20px;
+}
+.Travel .Manager .Manage h2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: left;
+    font: outline;
+    font-family: 'Raleway', sans-serif;
+    
+    
+}
+.Travel .Manager .Manage p{
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 17px;
+    padding-right: 600px;
+}
+
+.Travel .Image img{
+    width: 580px;
+    float: right;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: #777 0 0 25px;
+
+}
+
+/*27 Emergency Assistance*/
+.Emergency{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 70px 0px;
+    border: 1px solid #fff;
+    box-shadow: #777 0 0 25px;
+    margin-top: 20px;
+
+   
+}
+.Emergency .Manager{
+    padding: 20px;
+    gap: 20px;
+}
+.Emergency .Manager .Manage h2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: left;
+    font: outline;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 600px;
+    
+    
+}
+.Emergency .Manager .Manage p{
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 17px;
+    padding-left: 600px;
+}
+
+.Emergency .Image img{
+    width: 580px;
+    float: left;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: #777 0 0 25px;
+
+
+}
+/* Service Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    color: #004d99;
+    margin-bottom: 40px;
+}
+
+.images{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.images .Service{
+    width: 100;
+   
+}
+.images figure img{
+    width: 400px;
+    height: 400px;
+    padding-right: 20px;
+}
+
+fig {
+    padding: 20px;
+    width: 100%;
+    display: inline;
+    
+}
+/* Service Cards */
+.service-card {
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    transition: transform 0.3s ease;
+}
+.services  .service-card img{
+    width: 220px;
+   padding: 0%;
+   
+}
+.services  .image1 img{
+    width: 220px;
+   padding: 0%;
+   display: inline;
+   
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.service-card ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    color: #444;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.service-card ul li {
+    margin-bottom: 10px;
+}
+
+.service-card .service-link {
+    font-size: 14px;
+    color: #004d99;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.service-card .service-link:hover {
+    color: #ff9900;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .service-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
 #services {
     background-color: white;
     padding: 50px 0;
 }
+
 
 .service {
     margin-bottom: 30px;

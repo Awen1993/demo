@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "IAS3",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"livePreview.defaultPreviewPath": "/index.html"
+	}
+}

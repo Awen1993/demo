@@ -530,6 +530,7 @@ nav ul li ul li a:hover {
     position: relative;
     padding: 15px;
     border: 10px solid #fff;
+    box-shadow: #777 0 0 25px;
     
     
 }
@@ -546,11 +547,11 @@ nav ul li ul li a:hover {
 
 /* Service Cards */
 .service-card {
-    background: #00b3fff3;
     padding: 25px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: #777 0 0 25px;
+    border: 1px solid #fff;
     width: 30%;
     vertical-align: top;
     transition: transform 0.3s ease;
@@ -558,7 +559,6 @@ nav ul li ul li a:hover {
 .Car{
     width: 100%;
     padding-right: 40px;
-    display: inline; 
 }
 
 
@@ -673,10 +673,25 @@ nav ul li ul li a:hover {
 .service {
     margin-bottom: 30px;
 }
+
+.consultation-form h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.consultation-form {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #fff;
+    box-shadow: #444 0 0 10px ;
+}
 #consultation-form {
-    background-color: white;
-    padding: 50px 0;
+    padding: 100px ;
     margin-top: 50px; /* Space above the form */
+    border: 1px solid #fff;
+    box-shadow: #7f8c8d 0 0 25%;
+    
 }
 
 form {
@@ -693,7 +708,7 @@ form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc; /* Light border */
+    border: 1px solid #fff; /* Light border */
     border-radius: 5px;
 }
 
@@ -712,9 +727,14 @@ form button:hover {
 
 
 /* Login Section */
+.contain{
+    width: 100%;
+    border: 1px solid #fff;
+    box-shadow: #444 0 0 10px ;
+
+}
 #login {
     padding: 50px 0;
-    background-color: white;
     text-align: center;
 }
 
@@ -723,7 +743,6 @@ form button:hover {
     margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
-    background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -755,12 +774,14 @@ form button:hover {
 }
 
 /* Dashboard Section */
-#dashboard {
+.dashboard {
+    width: 100%;
     padding: 50px 0;
-    background-color: #ffffff;
+    border: 1px solid #fff;
+    box-shadow: #777 0 0 50px;
 }
 
-#dashboard h2 {
+.dashboard h2 {
     text-align: center;
     font-size: 30px;
     color: #2980B9;
@@ -803,9 +824,6 @@ form button:hover {
 .cta-button:hover {
     background-color: #C0392B;
 }
-
-
-
 
 
 .testimonial-section {
@@ -904,7 +922,6 @@ input, textarea{
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 10px;
-
 }
 
 textarea{
@@ -936,6 +953,7 @@ textarea{
     color: #FFD700;
 }
 
+
 .why-choose-section {
     padding: 50px 20px;
     box-shadow: #777 0 0 10px;
@@ -948,6 +966,9 @@ textarea{
     font-size: 36px;
     color: #333;
     margin-bottom: 20px;
+}
+.why-choose-section p{
+    margin-top: 20px;
 }
 
 .features-container {
@@ -990,10 +1011,12 @@ textarea{
     color: #555;
 }
 
-  /* Footer Styles */
-footer {
+ 
+/* Footer Styles */
+  footer {
+    width: 100%;
     /*background: url(Pictures/mountains.jpg);  /* Transparent Background */
-    color: white;
+    color: #000;
     padding: 50px 20px;
     text-align: center;
     width: 100%;
@@ -1002,7 +1025,9 @@ footer {
 }
 
 /* Footer Container */
-.footer-container {
+
+.footer {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1010,44 +1035,76 @@ footer {
     margin: auto;
 }
 
-/* Footer Sections */
-.footer-section {
-    flex: 1;
-    min-width: 250px;
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    text-align: left;
+}
+.footer .footer-container img{
+    width: 150px;
     margin-bottom: 20px;
+    
+}
+.footer .footer-container h2{
     text-align: left;
 }
 
-.footer-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #FFD700;
+/* Footer Sections */
+.footer-section {
+   text-align: left;
+   padding-right: 600px;
+   line-height: 30px;
 }
 
-/* Footer Links */
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin: 10px 0;
-}
-
-.footer-section ul li a {
-    color: white;
+.Quick{
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
     text-decoration: none;
-    transition: 0.3s;
+    font-size: 20px;
 }
 
-.footer-section ul li a:hover {
-    color: #FFD700;
+.footer .Quick ul li{
+    list-style: none;   
 }
 
-/* Contact Form */
-.get-in-touch form {
-    display: flex;
-    flex-direction: column;
+.footer .services{
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: justify;
+    font-size: 18px
+}
+.footer .services ul{
+    margin-top: 25px;
+    margin-left: -120px;
+}
+.footer .contact{
+    margin-top: -138px;
+    font-size: 20px;
+}
+
+.footer .contact .fas{
+    color: #00b3ff;
+}
+
+.footer .services ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.get-in-touch{
+    margin-top: -350px;
+    border: 1px solid #fff;
+    box-shadow: #777 0 0 25px;
+    border-radius: 10px;
+    width: 600px;
+}
+.get-in-touch h3{
+   font-size: 25px;
+   margin-bottom: 20px;
+   text-align: center;
 }
 
 .form-group {
@@ -1078,41 +1135,53 @@ footer {
 }
 
 .send-button {
-    background: #FFD700;
-    color: #003366;
+    margin-left: 280px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background: #00b3ff;
+    color: #fff;
     padding: 12px 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
 .send-button:hover {
-    background: #ffffff;
+    background: #FFD700;
     color: #003366;
 }
 
 /* Social Media Icons */
+
+.social-newsletter{
+    width: 100%;
+    margin: 20px;
+    margin-top: 100px;
+}
 .social-icons {
     text-align: center;
-    margin: 10px 0;
     color: #000;
+    margin-bottom: 20px;
 }
 
 .social-icons a {
     font-size: 2rem;
-    margin: 10px;
+    margin: 15px;
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
-    color: #FFD700;
+    color: #00b3ff;
 }
 
 .social-icons a:hover {
     color: #FFD700;
 }
 
+.footer .footer-bottom p{
+    text-align: center;
+}
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .footer-container {
@@ -1120,6 +1189,3 @@ footer {
         text-align: center;
     }
 }
-
-
-

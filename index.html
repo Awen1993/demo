@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iter Auxilium Services </title>
-    <link rel="icon" href="Log2.png" type="png">
+    <link rel="icon" href="../IAS3/Pictures/logo 2.png" type="png">
     <link rel="stylesheet" href="Style.css">
     <script src="script.js" defer></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
@@ -469,18 +469,22 @@
 </div>
 
  <!-- Footer Section -->
- <footer>
+  <section class="Foot">
+ <footer class="footer">
     <div class="footer-container">
         <!-- About Section -->
-        <div class="footer-section about">
+         <img src="../Pictures/logo 2.png" alt="Logo">
+        <div class="footer-section">
             <h3>About Us</h3>
-            <p>We provide efficient and reliable travel solutions designed to make your journey smooth, comfortable, and stress-free. 
-                From personalized itineraries to hassle-free transportation, we ensure every detail is carefully managed, so you can focus on enjoying your trip. 
-                Whether you're traveling for business or leisure, our services guarantee convenience, safety, and peace of mind at every step.</p>
+            <p>We provide efficient and reliable travel solutions designed to make your journey smooth, 
+                comfortable, and stress-free. From personalized itineraries to hassle-free transportation, 
+                we ensure every detail is carefully managed, so you can focus on enjoying your trip. 
+                Whether you're traveling for business or leisure, our services guarantee convenience, 
+                safety, and peace of mind at every step.</p>
         </div>
 
         <!-- Quick Links -->
-        <div class="footer-section quick-links">
+        <div class="Quick">
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -492,7 +496,7 @@
         </div>
 
         <!-- Services -->
-        <div class="footer-section services">
+        <div class="services">
             <h3>Our Services</h3>
             <ul>
                 <li><a href="#">Car Rentals</a></li>
@@ -503,7 +507,7 @@
         </div>
 
         <!-- Contact Section -->
-        <div class="footer-section contact">
+        <div class="contact">
             <h3>Contact Us</h3>
             <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, City, Country</p>
             <p><i class="fas fa-phone"></i> +123 456 7890</p>
@@ -511,7 +515,7 @@
         </div>
 
         <!-- Get In Touch Section -->
-        <div class="footer-section get-in-touch">
+        <div class="get-in-touch">
             <h3>Get In Touch</h3>
             <form action="submit-form.php" method="POST">
                 <div class="form-group">
@@ -531,6 +535,22 @@
                     <input type="text" placeholder="Country" name="country">
                 </div>
                 <div class="form-group">
+                    <!--<label for="enquiry">Select Your Enquiry Type:</label>-->
+                    <select id="enquiry" name="enquiry">
+                        <option value="" disabled selected>Enquiry Type</option>
+                        <option value="Pre-Trip_Assistance">Travel Assistance</option>
+                        <option value="Business & Corporate Travel Support">Business & Corporate Travel Support</option>
+                        <option value="Bildung_Bridge Program">Bildung_Bridge Program</option>
+                        <option value="itinerary_planning">Itinerary Planning</option>
+                        <option value="transportation_services">Transportation Services</option>
+                        <option value="Accommodation_Services">Concierge Services</option>
+                        <option value="emergency_assistance">Emergency Assistance</option>
+                        <option value="General_Consultation">General_Consultation</option>
+                        <option value="custom_request">Custom Request</option>
+                        <option value="general_enquiry">General Enquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <textarea placeholder="Message" name="message" rows="3" required></textarea>
                 </div>
                 <div class="form-group checkbox">
@@ -540,31 +560,29 @@
                 <button type="submit" class="send-button">Send</button>
             </form>
         </div>
-
-        <!-- Social Media & Newsletter -->
-        <div class="footer-section social-newsletter">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="+491787040122"><i class="fab fa-whatsapp"></i></a>
-            </div>
-            
-            <h3>Subscribe to Our Newsletter</h3>
-            <form>
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
     </div>
-
+<!-- Social Media & Newsletter -->
+<div class="social-newsletter">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="+491787040122"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+    <h3>Subscribe to Our Newsletter</h3>
+    <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
     <!-- Copyright -->
     <div class="footer-bottom">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Inter Auxilium Services. All rights reserved.</p>
     </div>
-    </footer>
-</div>
+</footer>
+</section>
 </body>
 </html>

@@ -1,27 +1,32 @@
 *{
     margin: 0px;
     padding: 0%;
-    box-sizing: border-box;  
-    /*overflow: hidden;*/
+    box-sizing: border-box;
 }
-
 body{
-    width: 100%;
-    background-image: url(Pictures/plane.jpg);
-    background-repeat: no-repeat;
+    background-image:url(Pictures/pexels-griffinw-3654864.jpg) ;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: overlay;
+    overflow-x: hidden;
 }
-/*.support {
-    bottom: 0px;
+/*body::before{ 
+  content: "";
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Pictures/pexels-griffinw-3654864.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -5; /* Send it behind other content 
 }*/
-.back{
-   /* background-image: url(Pictures/pexels-podnar2018-1424246.jpg) no-repeat center center ;
-    background-size: cover;*/
-}
+
 nav .fa{
     margin-right: 8px;
     size: 12px;
@@ -34,7 +39,7 @@ nav {
     padding: 0;
     background-image: url(Pictures/blue.jpg);
     position: relative;
-    z-index: 1000;
+    z-index: 1;
 }
 
 nav .logo p {
@@ -405,7 +410,6 @@ nav ul li ul li a:hover {
     text-align: center;
     line-height: 25px;
     font-size: 18px;
-    text-align: justify;
 }
 
 /*Corporate Manager*/
@@ -437,7 +441,6 @@ nav ul li ul li a:hover {
     line-height: 25px;
     font-size: 17px;
     padding-right: 600px;
-    text-align: justify;
 }
 
 .Travel .Image img{
@@ -481,7 +484,6 @@ nav ul li ul li a:hover {
     line-height: 25px;
     font-size: 17px;
     padding-left: 600px;
-    text-align: justify;
 }
 
 .Emergency .Image img{
@@ -594,7 +596,6 @@ nav ul li ul li a:hover {
 .Car .card p{
     font-size: 20px;
     margin-top: 20px;
-    text-align: justify;
     
  }
 .services  .image1 img{
@@ -616,7 +617,6 @@ nav ul li ul li a:hover {
     font-size: 18px;
     color: #666;
     margin-bottom: 20px;
-    text-align: justify;
 }
 
 .service-card ul {
@@ -629,7 +629,6 @@ nav ul li ul li a:hover {
 
 .service-card ul li {
     margin-bottom: 10px;
-    text-align: justify;
 }
 
 .service-card .service-link {
@@ -689,7 +688,7 @@ nav ul li ul li a:hover {
 }
 
 form {
-    max-width: 100%;
+    max-width: 600px;
     margin: 0 auto; /* Center the form */
 }
 
@@ -888,15 +887,11 @@ form button:hover {
     margin-top: 10px;
 }
 
-
 /*Contact*/
 .Contact{
-    max-width: 100%;
-    height: auto;
-    margin: auto;
+    width: 100%;
     padding: 40px;
-    text-align: center;
-    /*background: #f5f5f5;*/   
+    text-align: center;  
     border: 1px solid #fff;
     box-shadow: gray 0 0 10px;
     border-radius: 0%;
@@ -913,11 +908,10 @@ form button:hover {
 }
 
 input, textarea{
-    width: 48%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 10px;
-
 }
 
 textarea{
@@ -949,29 +943,84 @@ textarea{
     color: #FFD700;
 }
 
+
+.why-choose-section {
+    padding: 50px 20px;
+    box-shadow: #777 0 0 10px;
+    border:1px solid #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.why-choose-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.why-choose-section p{
+    margin-top: 20px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-box {
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: #777 0 0 25px;
+    border: 1px solid #fff;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+ 
 /* Footer Styles */
-footer {
+  footer {
+    width: 100%;
     /*background: url(Pictures/mountains.jpg);  /* Transparent Background */
     color: #000;
     padding: 50px 20px;
     text-align: center;
-    width: 100%;
     border-radius: 10px;
-    border: 1px solid #ffffff;
-    box-shadow: #777 0 0 10px;
 
 }
 
 /* Footer Container */
 
 .footer {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
-    margin-top: 40px;
-    
+    margin: auto;
 }
 
 .footer-container {
@@ -986,15 +1035,13 @@ footer {
     margin-bottom: 20px;
     
 }
-.footer .footer-container h3{
-    text-align: justify;
+.footer .footer-container h2{
+    text-align: left;
 }
-
 
 /* Footer Sections */
 .footer-section {
-   text-align: justify;
-   padding-right: 0px;
+   text-align: left;
    line-height: 30px;
 }
 
@@ -1011,14 +1058,17 @@ footer {
 }
 
 .footer .services{
-    margin-top: -180px;
+    margin-top: 20px;
     text-decoration: none;
     text-align: justify;
-    font-size: 20px;
-    margin-left: 40%;
+    font-size: 18px
+}
+.footer .services ul{
+    margin-top: 25px;
+    margin-left: -120px;
 }
 .footer .contact{
-    margin-top: -180px;
+    margin-top: -138px;
     font-size: 20px;
 }
 
@@ -1029,31 +1079,27 @@ footer {
 .footer .services ul{
     list-style: none;
     text-decoration: none;
-    margin-top: 25px;
-    margin-left: -130px;
 }
 
 .get-in-touch{
-    margin-top: 40px;
     border: 1px solid #fff;
     box-shadow: #777 0 0 25px;
     border-radius: 10px;
     width: 100%;
-    text-align: center;
 }
 .get-in-touch h3{
    font-size: 25px;
    margin-bottom: 20px;
+   text-align: center;
 }
 
 .form-group {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
+
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -1068,19 +1114,15 @@ footer {
     display: flex;
     align-items: center;
     font-size: 0.9rem;
-    margin-bottom: 30px;
 }
 
 .checkbox label {
     margin-left: 10px;
 }
-.checkbox input{
-    margin: 0px; 
-}
 
 .send-button {
-    margin-left: 20px;
-    margin-top: 0px;
+    margin-left: 280px;
+    margin-top: -20px;
     margin-bottom: 20px;
     background: #00b3ff;
     color: #fff;
@@ -1116,19 +1158,16 @@ footer {
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
-    color: #FFf;
+    color: #00b3ff;
 }
 
 .social-icons a:hover {
     color: #FFD700;
 }
 
-.footer-bottom p{
-    width: 100%;
+.footer .footer-bottom p{
     text-align: center;
-    margin-left: 125%;
 }
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .footer-container {

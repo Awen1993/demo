@@ -372,82 +372,6 @@ nav ul li ul li a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.Handshake{
-    background: #003366;
-    height: 60vh;
-    
-
-}
-/*.Handshake img{
-    width: 100%;
-    position: relative;
-    margin-top: 40px;
-    border-radius: 30% 30% 0 0;  
-    opacity: 0.2;
-    clip-path: polygon(0 0%, 10%, 10%, 100% 0, 0);
-    background-size: 100%;
-    
-}*/
-
-/*Hero Section with Background Image 
-.hero {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)), 
-        url("Assist.jpg");
-        opacity: 0.4;
-        background-position: 0%;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 800px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        position:relative;
-        top: 0px;
-}
-.hero-content {
-    color: #FFD700;
-    text-align: center;
-    padding: 200px;
-}
-
-.hero h1 {
-    font-size: 45px;
-    margin-bottom: 40px;
-}
-
-.hero p {
-    font-size: 30px;
-    margin-bottom: 100px;
-    font-weight: 500px;
-    line-height: 10px;
-}
-
-.hero .Opaque p{
-    font-size:  50px;
-    margin-top: -100px;
-    font-weight: bold;
-    opacity: 0.05;
-    color: #fff;
-}
-
-.btn {
-    text-decoration: none;
-    background: #FFD700;
-    color: #00b3fff3;
-    padding: 5px 15px;
-    border-radius: 100px;
-    font-size: 25px;
-    transition: 0.3s;
-    margin-top: 10px;
-    display: inline;
-}
-
-.btn:hover {
-    background: #00b3fff3;
-    color: #FFD700;
-}*/
 
 /* Services Section */
 .services {
@@ -480,53 +404,14 @@ nav ul li ul li a:hover {
     /*background: #264653;*/
     position: relative;;
     overflow: hidden;
-    height: 350px;
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
 }
-.features .blue {
-   margin: auto;
-    width: 100px;
-    
-}
-.features .blue img{
-    margin-left: 300px;
-    width: 600px;
-    border-radius: 10%;
-    transform: rotate(-45deg);
-    opacity: 0.5;
-    /*border: 5px solid #FFD700;*/
 
-}
-.features .Pick {
-    margin: auto;
-    width: 100px;
-}
-.features .Pick img{
-    border-radius: 10%;
-    margin-left: 200px;
-    width: 600px;
-    transform: rotate(-45deg);
-    position: relative;
-    top: -280px;
-    opacity: 0.2;
-    border: 5px solid #FFD700;
-}
-.features .Pick2 {
-    margin: auto;
-    width: 100px;
-}
-.features .Pick2 img{
-    border-radius: 10%;
-    margin-right: 200px;
-    width: 600px;
-    transform: rotate(-45deg);
-    position: relative;
-    top: -280px;
-    opacity: 0.2;
-    border: 5px solid #FFD700;
-}
 .features h1 {
     font-size: 36px;  /* Adjust text size */
-    color: #FFD700;  /* Change text color */
+    color: #264653;  /* Change text color */
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -534,128 +419,62 @@ nav ul li ul li a:hover {
 }
 .features p {
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     font-weight: 500px;
     line-height: 30px;
-    color: #fff;
+    color: #264653;
     /*margin-left: 20px;*/
-    text-align: center;
+    text-align: justify;
+    font-family: 'Raleway';
 }
 
-/* Section Styling */
-.section {
-    padding: 60px 20px;
-    text-align: center;
-   /* background-color: #00b3fff3;*/
-    margin: auto;
-}
-/* Service Section */
-.section h2 {
-    font-size: 50px;
-    color: #FFD700;
-}
-.services-container {
-    display:flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.service-card {
-    background-color: #264653;
+/*Section Styling*/
+.Pre{
     padding: 20px;
-    width: 30%;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 20px;
+
 }
-.service-card h3 {
-    font-size: 30px;
-    color: #f1c40f;
+.Pre h2{
+    font-size: 36px;  /* Adjust text size */
+    color: #264653;  /* Change text color */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /*margin-left: 30px;*/
 }
-.service-card p {
+
+.Pre p{
     font-size: 20px;
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    line-height: 45px;
-}
-.service-card .More{
-    display: inline-block;
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    color: #00b3fff3;
-    background: #f1c40f;
-    text-decoration: none;
-    border-radius: 40px;
-    transition: 0.3s ease-in-out;
-    animation: fadeInUp 1.5s ease-in-out;
-    
-}
-.service-card .More:hover{
-    background: #00b3fff3;
-    color: #FFD700;
-    transform: scale(1.05);
-
-}
-
-
-/*.service-card:hover {
-    transition: all 0.10s ease 0s;
-    border-radius: 0px 0px 20px 0px;
-}*/
-
-.service-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-}
-.TTPS{
-    padding: 20px;
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: right;
-    justify-content: center;
-    text-align: center;
-   /* background-image: url(Pictures/pexels-podnar2018-1424246.jpg); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);*/
-}
-.TTPS-content{
-    position: relative;
-    padding: 20px;
-    text-align: center;
-}
-.TTPS-content h1{
-    font-size: 3rem;
-    position: relative;
-    font-weight: bold;
-    color: #d4a60b;
-    margin-bottom: 50px;
-    text-align: center;
-    align-items: right;
-    margin-left: 100px;
-    
-}
-
-.TTPS-content p{
-    font-size: 1.5rem;
-    position: relative;
-    font-weight: bold;
-    color: #003366;
+    margin-bottom: 20px;
+    font-weight: 500px;
     line-height: 30px;
-    
+    color: #264653;
+    /*margin-left: 20px;*/
+   
+    text-align: justify;
+    font-family: 'Raleway';
 }
-
-.Profile img{
+.Pre .Tre h3{
+    font-size: 25px;  /* Adjust text size */
+    color: #264653;  /* Change text color */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Pre .Tre{
+    text-align: center;
+    border: 1px solid #fff;
+    box-shadow: #777 0 0 25px;
+}
+.Pre img{
     width: 600px;
-    float: right;
-    border-radius: 10%;
-    margin-top: 25%;
+    border-radius: 10px;
+    vertical-align: middle;
+    object-fit: cover;
+    margin-top: 20px;
 }
-.TTPS-content .More{
+.Pre .Tre .More{
     display: inline-block;
     padding: 12px 25px;
     font-size: 1.2rem;
@@ -667,125 +486,227 @@ nav ul li ul li a:hover {
     animation: fadeInUp 1.5s ease-in-out;
     
 }
-.TTPS-content .More:hover{
+.Pre .Tre .More:hover{
     background: #00b3fff3;
     color: #FFD700;
     transform: scale(1.05);
 }
 
-/* Section Styling */
-.BB {
-    padding: 10px 20px;
+.Card{
+    display: flex; /* Aligns items side by side */
+    justify-content: center; /* Centers content horizontally */
+    gap: 20px; /* Adds space between images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin-top: 40px;
+}
+.Card figure{
+    text-align: center; /* Centers the caption */
+    width: 600px; /* Set a fixed width */
+    display: flex;
+    flex-direction: column; /* Keeps image and caption in column */
+    align-items: center; /* Centers content */
+}
+
+.Card figure img{
+    width: 100%; /* Makes images responsive */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+.Card figcaption{
     text-align: center;
-    background-color: #00b3fff3;
-    margin: auto;
 }
-/* Service Section */
-.BB h2 {
-    font-size: 50px;
-    color: #FFD700;
+.Card figcaption h3{
+    font-size: 25px;  /* Adjust text size */
+    color: #264653;  /* Change text color */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-.BBS {
-    display: flex;               /* Enables Flexbox layout */
-    justify-content: space-between; /* Evenly spaces out the cards */
-    flex-wrap: wrap;             /* Allows cards to wrap on smaller screens if needed */
-    gap: 15px;                   /* Optional: Adds gap between cards */
-    margin-top: 20px;
-}
-
-
-.BBS-card {
-    background-color: #264653;
-    padding: 20px;
-    width: 400px;
-    border-radius: 0px 50px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-.BBS-card h3 {
-    font-size: 30px;
-    color: #f1c40f;
-}
-.BBS-card p {
+.Card figcaption p{
     font-size: 20px;
-    color: #FFD700;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #264653;
     text-align: center;
-    margin-top: 20px;
-    line-height: 35px;
-}
-.BBS-card .More{
-    display: inline-block;
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    color: #00b3fff3;
-    background: #f1c40f;
-    text-decoration: none;
-    border-radius: 40px;
-    transition: 0.3s ease-in-out;
-    animation: fadeInUp 1.5s ease-in-out;
-    
-}
-.BBS-card .More:hover{
-    background: #00b3fff3;
-    color: #FFD700;
-    transform: scale(1.05);
-
+    font-family: 'Raleway';
 }
 
-
-.BBS-card img {
+.Trans{
     width: 100%;
-    height: auto;
-    border-radius: 50%;
-    border-color: #d4a60b;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem;
+    font-family: 'Raleway';
+}
+.Trans img{
+    width: 600px;
+    border-radius: 10px;
+    vertical-align: middle;
     object-fit: cover;
 }
-.Bildung{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 20px;
-    text-align: center;
-    /*background-image: url(Pictures/Lake1.jpg);*/
-    margin: auto;
+.Accommodation{
+    flex: 1;
 }
-.Bri{
-    width:fit-content;
+.Accommodation h3{
+    font-size: 25px;  /* Adjust text size */
+    color: #264653;  /* Change text color */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Accommodation p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #264653;
+    text-align: justify;
+    font-family: 'Raleway';
+}
+.Trans .Accommodation .More{
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
     color: #00b3fff3;
+    background: #f1c40f;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+    
 }
-.Bildung h2{
-    font-size: 50px;
+.Trans .Accommodation .More:hover{
+    background: #00b3fff3;
     color: #FFD700;
+    transform: scale(1.05);
+}
+.Movement{
+    width: 100%;
+    padding: 20px;
+    gap: 1rem;
+    font-family: 'Raleway';
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+
+.Movement .Move{
+    padding: 20px;
+} 
+
+.Movement .Move h3{
+    font-size: 25px;  /* Adjust text size */
+    color: #264653;  /* Change text color */
     text-align: center;
-    position: absolute;
-    margin-left: 350px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Movement .Move img{
+    width: 600px;
+    float: right;
+    vertical-align: middle;
+    object-fit: cover;
+    padding-left: 0px;
+    border-radius: 10px;
+}
+.Movement .Move p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #264653;
+    text-align: justify;
+    font-family: 'Raleway';
+    padding-right: 55%;
 }
 
-.Bildung figure{
-    width: 100%;
-    text-align: center;
-    margin-top: 100px;
-    background-color: #264653;
-    border-radius: 30px;
-    gap: 5px;
-}
-.Bildung figure img{
-    width: 200px;
-    border-radius: 20%;
-    box-shadow: #fff 0 0 10px;
-    border: #111 1px solid;
-    margin-top: 35px;
-}
-.Bildung figure figcaption{
-    color: #FFD700;
-    font-size: 25px;
-    margin: 20px;
-    text-transform: uppercase;
-    text-align: center;
-}
-.Bildung figure p{
+.Movement .Move .More{
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
     color: #00b3fff3;
-    size: 15px;
-    line-height: 2;
+    background: #f1c40f;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+    text-align: center;
+    
+}
+.Movement .Move .More:hover{
+    background: #00b3fff3;
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+.Education{
+    position: relative;;
+    overflow: hidden;
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.Education h2{
+    font-size: 36px;  /* Adjust text size */
+    color: #264653;  /* Change text color */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Education P{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #264653;
+    text-align: justify;
+    font-family: 'Raleway';
+}
+
+.Access {
+    padding: 10px;
+    display: flex; /* Aligns items side by side */
+    justify-content: center; /* Centers content horizontally */
+    gap: 10px; /* Adds space between images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.Access figure {
+    text-align: center; /* Centers the caption */
+    width: 300px; /* Set a fixed width */ 
+    display: flex;
+    flex-direction: column; /* Keeps image and caption in column */
+    align-items: center; /* Centers content */
+    
+}
+
+.Access figure img {
+    width: 100%; /* Makes images responsive */
+    height: 300px; 
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    border: 1px solid #fff;
+    box-shadow: #444 0 0 25px;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Access figcaption {
+    font-size: 16px;
+    margin-top: 10px; /* Adds space between image and caption */
+    max-width: 90%; /* Prevents caption from stretching */
+}
+.Access figcaption p{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
 }
 
 figure .More{
@@ -948,6 +869,65 @@ figure .More:hover{
     }
 }
 
+/*Contact*/
+.Contact{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    /*background: #f5f5f5;*/   
+    border: 1px solid #fff;
+    box-shadow: gray 0 0 10px;
+    border-radius: 0%;
+}
+.Contact h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+}
+
+.form-check{
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.bt{
+    display: inline;
+    color: #003366;
+    background: #FFD700;
+    padding: 10px 20px;
+    border-radius: 20%;
+    box-shadow: gray 0 0 10px;
+    border: 1px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.bt::hover{
+    background: #003366;
+    color: #FFD700;
+}
 
 /* Footer Styles */
 .foot{

@@ -674,6 +674,131 @@ nav ul li ul li a:hover {
 }
 
 
+/*Contact*/
+.Contact{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    /*background: #f5f5f5;*/   
+    border: 1px solid #fff;
+    box-shadow: gray 0 0 10px;
+    border-radius: 0%;
+}
+.Contact h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+}
+
+.form-check{
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.bt{
+    display: inline;
+    color: #003366;
+    background: #FFD700;
+    padding: 10px 20px;
+    border-radius: 20%;
+    box-shadow: gray 0 0 10px;
+    border: 1px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.bt::hover{
+    background: #003366;
+    color: #FFD700;
+}
+
+.why-choose-section {
+    padding: 50px 20px;
+    box-shadow: #777 0 0 10px;
+    border:1px solid #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.why-choose-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-box {
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: #777 0 0 25px;
+    border: 1px solid #fff;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+  /* Footer Styles */
+footer {
+    /*background: url(Pictures/mountains.jpg);  /* Transparent Background */
+    color: #000;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
 
 
 

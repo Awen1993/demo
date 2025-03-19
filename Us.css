@@ -477,7 +477,7 @@ nav ul li ul li a:hover {
 
 .Principles .Prince img{
     width: 500px;
-    height: 500px;
+    height: 770px;
     float: right;
     vertical-align: middle;
     object-fit: cover;
@@ -796,36 +796,7 @@ footer {
     text-align: center;
     width: 100%;
     border-radius: 10px;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  /* Footer Styles */
@@ -868,8 +839,8 @@ footer {
 /* Footer Sections */
 .footer-section {
    text-align: left;
-   padding-right: 600px;
    line-height: 30px;
+   text-align: justify;
 }
 
 .Quick{
@@ -885,13 +856,14 @@ footer {
 }
 
 .footer .services{
-    margin-top: 20px;
+    margin-top: -180px;
     text-decoration: none;
     text-align: justify;
-    font-size: 18px
+    font-size: 20px;
+    margin-left: 40%;
 }
 .footer .contact{
-    margin-top: -138px;
+    margin-top: -180px;
     font-size: 20px;
 }
 
@@ -905,11 +877,11 @@ footer {
 }
 
 .get-in-touch{
-    margin-top: -350px;
+    margin-top: 20px;
     border: 1px solid #fff;
     box-shadow: #777 0 0 25px;
     border-radius: 10px;
-    width: 600px;
+    width: 100%;
 }
 .get-in-touch h3{
    font-size: 25px;
@@ -990,7 +962,9 @@ footer {
 }
 
 .footer .footer-bottom p{
+    width: 100%;
     text-align: center;
+    margin-left: 125%;
 }
 /* Responsive Design */
 @media screen and (max-width: 768px) {

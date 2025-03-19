@@ -976,7 +976,7 @@ textarea{
 /* Footer Sections */
 .footer-section {
    text-align: left;
-   padding-right: 600px;
+   padding-right: 0px;
    line-height: 30px;
 }
 
@@ -993,14 +993,14 @@ textarea{
 }
 
 .footer .services{
-    margin: 20px;
+    margin-top: -230px;
     text-decoration: none;
     text-align: justify;
-    font-size: 18px;
-    margin-left: -50px;
+    font-size: 20px;
+    margin-left: 40%;
 }
 .footer .contact{
-    margin-top: -138px;
+    margin-top: -180px;
     font-size: 20px;
 }
 
@@ -1014,11 +1014,11 @@ textarea{
 }
 
 .get-in-touch{
-    margin-top: -350px;
+    margin-top: 0px;
     border: 1px solid #fff;
     box-shadow: #777 0 0 25px;
     border-radius: 10px;
-    width: 600px;
+    width: 100%;
     text-align: center;
 }
 .get-in-touch h3{
@@ -1029,10 +1029,11 @@ textarea{
 .form-group {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -1047,15 +1048,19 @@ textarea{
     display: flex;
     align-items: center;
     font-size: 0.9rem;
+    margin-bottom: 30px;
 }
 
 .checkbox label {
     margin-left: 10px;
 }
+.checkbox input{
+    margin: 0px; 
+}
 
 .send-button {
     margin-left: 20px;
-    margin-top: -20px;
+    margin-top: 0px;
     margin-bottom: 20px;
     background: #00b3ff;
     color: #fff;
@@ -1098,8 +1103,10 @@ textarea{
     color: #FFD700;
 }
 
-.footer .footer-bottom p{
+.footer-bottom p{
+    width: 100%;
     text-align: center;
+    margin-left: 125%;
 }
 
 /* Responsive Design */

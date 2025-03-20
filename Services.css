@@ -377,29 +377,31 @@ nav ul li ul li a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-
 .Services{
+    width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.Services h2{
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: left;
+}
+.Services h3{
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/*.Services{
     width: 100%;
     height: auto;
     padding: 20px;
     position: relative;
     font-family: 'Raleway', sans-serif;
 }
-/*.Services::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-image: url(Pictures/tourist-carrying-baggage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    z-index: -1;   
-}*/
-
 .Services .Pre-Trip{
     padding: 	20px;
     text-align: center;
@@ -444,6 +446,10 @@ nav ul li ul li a:hover {
     text-align: left;
     margin-left: 500px ;
     line-height: 40px;
+}
+.Services img{
+    width: 450px;
+    height: 800px;
 }
 .foreground {
     position: absolute;
@@ -493,9 +499,9 @@ nav ul li ul li a:hover {
 }
 
 .Consultation .Travel .Cont ul li::marker{
-    color: #000; /* Change bullet color */
+    color: #000; 
     font-size: 2em; 
-}
+}*/
 
 /*Transportation Services*/
 .Transportation{

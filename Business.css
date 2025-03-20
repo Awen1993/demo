@@ -18,10 +18,7 @@ body{
 /*.support {
     bottom: 0px;
 }*/
-.back{
-   /* background-image: url(Pictures/pexels-podnar2018-1424246.jpg) no-repeat center center ;
-    background-size: cover;*/
-}
+
 nav .fa{
     margin-right: 8px;
     size: 12px;
@@ -376,6 +373,7 @@ nav ul li ul li a:hover {
 .Corporate{
     width: 100%;
     padding: 20px;
+    flex-wrap: wrap;
 }
 .Corporate .Sub-Corporate{
     width: 100%;
@@ -416,6 +414,7 @@ nav ul li ul li a:hover {
     border: 1px solid #fff;
     box-shadow: #777 0 0 25px;
     margin-top: 20px;
+    flex-wrap: wrap;
 
 }
 .Travel .Manager{
@@ -459,9 +458,10 @@ nav ul li ul li a:hover {
     border: 1px solid #fff;
     box-shadow: #777 0 0 25px;
     margin-top: 20px;
-
-   
+    flex-wrap: wrap;
 }
+
+
 .Emergency .Manager{
     padding: 20px;
     gap: 20px;
@@ -502,6 +502,7 @@ nav ul li ul li a:hover {
     text-align: center;
     display: flex;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .services h2 {
@@ -551,10 +552,12 @@ nav ul li ul li a:hover {
     width: 30%;
     vertical-align: top;
     transition: transform 0.3s ease;
+    flex-wrap: wrap;
 }
 .Car{
     width: 100%;
     padding-right: 40px;
+    flex-wrap: wrap;
 }
 
 
@@ -567,6 +570,7 @@ nav ul li ul li a:hover {
     transition: transform 0.3s ease;
     border: 1px solid #fff;
     box-shadow: #444 0 0 10px;
+    flex-wrap: wrap;
 }
 .Car .card ul li{
     list-style: none;
@@ -600,8 +604,7 @@ nav ul li ul li a:hover {
 .services  .image1 img{
     width: 220px;
    padding: 0%;
-   display: inline;
-   
+   display: inline;  
 }
 
 
@@ -951,7 +954,6 @@ textarea{
 
 /* Footer Styles */
 footer {
-    /*background: url(Pictures/mountains.jpg);  /* Transparent Background */
     color: #000;
     padding: 50px 20px;
     text-align: center;
@@ -996,6 +998,7 @@ footer {
    text-align: justify;
    padding-right: 0px;
    line-height: 30px;
+   flex-wrap: wrap;
 }
 
 .Quick{

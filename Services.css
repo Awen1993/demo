@@ -412,7 +412,6 @@ nav ul li ul li a:hover {
 }
 .Trip{
     text-align: left;
-    margin: 20px;
 }
 .Trip img{
     width: 500px;
@@ -563,9 +562,7 @@ nav ul li ul li a:hover {
 }
 
 
-
-
-.Transport {
+.Transport{
     padding: 50px 20px;
     border: 1px solid #fff;
     box-shadow: #777 0 0 10px;
@@ -654,6 +651,7 @@ nav ul li ul li a:hover {
 .btn:hover {
     background: #0056b3;
 }
+
 
 
 /*IAS Accommodation Services*/

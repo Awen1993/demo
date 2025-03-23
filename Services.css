@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0px;
     padding: 0%;
@@ -9,8 +11,7 @@ body{
     background-size: cover;
     background-position: center;
     background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode: overlay;
-    overflow-x: hidden;
+ 
 }
 /*body::before{ 
   content: "";
@@ -560,6 +561,8 @@ nav ul li ul li a:hover {
     list-style-type: none;
     line-height: 30px;
 }
+
+
 
 
 .Transport {
@@ -1412,3 +1415,7 @@ textarea{
         text-align: center;
     }
 }
+
+
+
+

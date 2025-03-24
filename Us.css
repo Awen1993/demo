@@ -681,6 +681,7 @@ nav ul li ul li a:hover {
 .Airport{
     padding: 40px;
     margin-top: 20px;
+    
 }
 /* Swiper Container */
 .swiper {
@@ -703,7 +704,7 @@ nav ul li ul li a:hover {
     border: 1px solid #fff;
     text-align: center;
     width: 380px; /* Adjust width slightly smaller than 400px to fit layout */
-    height: 40vh;
+    height: 50vh;
 }
 
 /* Image inside the card */
@@ -770,11 +771,13 @@ nav ul li ul li a:hover {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 10px;  
 }
 .Airport .name-profession h3{
     font-size: 14px;
     text-align: left;
-    font-style: italic;   
+    font-style: italic; 
+    padding: 10px;  
 }
 
 /*Contact*/

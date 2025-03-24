@@ -447,7 +447,8 @@ nav ul li ul li a:hover {
     border-radius: 10px;
     border: 1px solid #fff;
     box-shadow: #777 0 0 25px;
-
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 /*27 Emergency Assistance*/
@@ -466,6 +467,7 @@ nav ul li ul li a:hover {
     padding: 20px;
     gap: 20px;
 }
+
 .Emergency .Manager .Manage h2{
     margin-top: 20px;
     font-size: 30px;
@@ -492,9 +494,10 @@ nav ul li ul li a:hover {
     border-radius: 10px;
     border: 1px solid #fff;
     box-shadow: #777 0 0 25px;
-
-
+    object-fit: cover;
+    vertical-align: middle;
 }
+
 /* Service Section */
 .services {
     padding: -30px 50px 20px;
@@ -516,11 +519,15 @@ nav ul li ul li a:hover {
     width: 100%;
     display: flex;
     gap: 40px;
+    object-fit: cover;
+    vertical-align: middle;
 }
+
 .images .Service{
     width: 100;
    
 }
+
 .images figure img{
     width: 380px;
     height: 380px;
@@ -554,33 +561,38 @@ nav ul li ul li a:hover {
     transition: transform 0.3s ease;
     flex-wrap: wrap;
 }
+
 .Car{
     width: 100%;
     padding-right: 40px;
     flex-wrap: wrap;
+    height: 110vh;
+    border: 1px solid #fff;
+    box-shadow: #444 0 0 10px;
+    border-radius: 10px;
 }
-
 
 .card {
     padding: 50px;
     margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     transition: transform 0.3s ease;
-    border: 1px solid #fff;
-    box-shadow: #444 0 0 10px;
     flex-wrap: wrap;
 }
+
+
 .Car .card ul li{
     list-style: none;
 }
+
 .Car .card img{
     width: 500px;
     margin:0 0 10px 380px;
     border: 1px solid #fff;
     border-radius: 10px;
     box-shadow: #444 0 0 10px; 
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 .Car .card h3{
@@ -590,21 +602,26 @@ nav ul li ul li a:hover {
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
 }
+
 .Car .card ul{
     margin: 20px;
     line-height: 30px;
 }
 
+
 .Car .card p{
     font-size: 20px;
     margin-top: 20px;
-    text-align: justify;
-    
+    text-align: justify;   
  }
+
+
 .services  .image1 img{
-    width: 220px;
+   width: 220px;
    padding: 0%;
    display: inline;  
+   object-fit: cover;
+   vertical-align: middle;
 }
 
 

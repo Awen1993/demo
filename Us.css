@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0px;
     padding: 0%;
@@ -673,6 +675,107 @@ nav ul li ul li a:hover {
     text-align: justify;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.Airport{
+    padding: 40px;
+    margin-top: 20px;
+}
+/* Swiper Container */
+.swiper {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+/* Individual Slide */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    border-radius:10px;
+    box-shadow: #777 0 0 10px;
+    border: 1px solid #fff;
+    text-align: center;
+    width: 380px; /* Adjust width slightly smaller than 400px to fit layout */
+    height: 40vh;
+}
+
+/* Image inside the card */
+/*.card .image {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}*/
+
+/*.card .image img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: #777 0 0 10px;
+    border: 1px solid #fff;
+}*/
+
+/* Adjust Navigation Buttons */
+.swiper-button-next, .swiper-button-prev {
+    color: #FFD700; /* Gold color */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 10px; /* Make them larger */
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Move arrows slightly outside the images */
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+/* Pagination Styling */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 10px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #265df2;
+}
+
+.Airport .description{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Airport .name-profession h3{
+    font-size: 14px;
+    text-align: left;
+    font-style: italic;   
+}
 
 /*Contact*/
 .Contact{

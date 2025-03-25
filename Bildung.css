@@ -14,22 +14,23 @@ body{
     overflow-x: hidden;
 }
 nav .fa{
-    margin-right: 8px;
-    size: 12px;
+    margin-right: 6px;
+    font-size: 13px;
+    color: #ffcc00;
 }
 
 nav {
     width: 100%;
-    height: 180px;
+    height: 25vh;
     line-height: 45px;
     padding: 0;
     background-image: url(Pictures/blue.jpg);
     position: relative;
-    z-index: 1000;
+   
 }
 
 nav .logo p {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     color: #FFD700;
     float: left;
@@ -38,45 +39,65 @@ nav .logo p {
     cursor: pointer;
     font-family: sans-serif;
     position: relative;
-    margin-left: 60px;
-    top: 20px;
+    margin-left: 150px;
+    top: -90px;
+}
+nav img{
+    width: 100px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+nav .logo .sev {
+    top: -68px;
+    margin-left: -130px;
 }
 
 nav .Tag p {
-    font-size: 13px;
+    font-size: 10px;
     float: left;
     text-transform: uppercase;
-    margin-left: 65px;
+    margin-left: 100px;
     position: absolute;
-    top: 50px;
+    top: 70px;
+    font-style: italic;
 }
 
 nav ul {
     float: right;
-    top: 50px;
+    margin-top: -60px;
     position: relative;
-    z-index: 1050;
+    z-index: 100;
+}
+nav .support{
+    margin-top: -100px;
+}
+nav .Hom {
+    display: flex;
+    justify-content: flex-end; /* Moves it completely to the right */
+    width: auto; /* Prevents it from taking full width */
+    margin-left: auto; /* Pushes it to the right */
 }
 
 nav ul li {
     float: left;
     list-style: none;
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 nav ul li a {
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     padding: 5px 5px;
     color: #FFD700;
     text-decoration: none;
-    display: block;
-    font-family: sans-serif;
+    font-family: 'Raleway' 'sans-serif';
     
 }
 
 nav ul li a:hover {
+    display: block;
     background: #00b3fff3;
     color: #FFD700;
     transition: all 0.10s ease-in-out;
@@ -90,8 +111,11 @@ nav ul li ul {
     background-color: #003366;
     border-radius: 0 0 20px 0;
     z-index: 1050;
-    width: 190px;
-    padding: 10px;
+    width: auto;
+    padding: 5px;
+    top: 100%; /* Pushes the dropdown below the main menu */
+    left: 0;
+    margin-top: auto;
 }
 
 nav ul li:hover ul {
@@ -99,24 +123,55 @@ nav ul li:hover ul {
 }
 
 nav ul li ul li {
-    line-height: 2;
-    width: 100%;
+    line-height: 1.5;
+    width: auto;
     border-radius: 10px;
-    padding: 5px;
+
 }
 
 nav ul li ul li a {
-    padding: 5px;
     display: block;
-    text-align: left;
+    font-size: 18px;
 }
 
 nav ul li ul li a:hover {
     background: #00b3fff3;
     color: #FFD700;
 }
-.fa{
-    color: #ffcc00;
+
+
+/* Search Bar Styling */
+.search-form {
+    float: right;
+    display: flex;
+    align-items: right;
+    width: 500px; /* Adjust width */
+    height: 30px; /* Adjust height */
+    text-align: right;
+    margin-top: 0px;
+}
+
+.search-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    width: 2500px; /* Adjust width */
+    height: 30px;
+}
+
+.search-form button {
+    padding: 10px;
+    border: none;
+    background: #00b3fff3;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    width: 200px; /* Adjust width */
+    height: 30px;
+}
+
+.search-form button:hover {
+    background: #fff;
 }
 
 
@@ -281,31 +336,6 @@ nav ul li ul li a:hover {
     }
 }
 
-/* Search Bar Styling */
-.search-form {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.search-form input {
-    padding: 10px;
-    border: none;
-    border-radius: 10px 0 0 10px;
-    outline: none;
-}
-
-.search-form button {
-    padding: 10px;
-    border: none;
-    background: #00b3fff3;
-    cursor: pointer;
-    border-radius: 0 10px 10px 0;
-}
-
-.search-form button:hover {
-    background: #fff;
-}
 
 .hero {
     position: relative;
@@ -457,6 +487,7 @@ nav ul li ul li a:hover {
 .Car{
     width: 100%;
     padding-right: 40px;
+    height: auto;
 }
 
 
@@ -470,6 +501,7 @@ nav ul li ul li a:hover {
     border: 1px solid #fff;
     box-shadow: #444 0 0 10px;
     text-align: justify;
+    height: auto;
 }
 .Car .card ul li{
     list-style: none;

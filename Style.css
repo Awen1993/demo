@@ -27,7 +27,6 @@ nav .fa{
 nav {
     width: 100%;
     height: 25vh;
-    line-height: 45px;
     padding: 0;
     background-image: url(Pictures/blue.jpg);
     position: relative;
@@ -45,15 +44,20 @@ nav .logo p {
     font-family: sans-serif;
     position: relative;
     margin-left: 150px;
-    top: -90px;
+    top: -60px;
 }
 nav img{
     width: 100px;
     margin-left: 70px;
     margin-top: 20px;
 }
+
+.Mobile{
+    display: none;
+}
+
 nav .logo .sev {
-    top: -68px;
+    top: -40px;
     margin-left: -130px;
 }
 
@@ -61,37 +65,37 @@ nav .Tag p {
     font-size: 10px;
     float: left;
     text-transform: uppercase;
-    margin-left: 100px;
+    margin-left: 40px;
     position: absolute;
-    top: 70px;
+    top: 80px;
     font-style: italic;
 }
 
-nav ul {
-    float: right;
-    margin-top: -60px;
-    position: relative;
-    z-index: 100;
-}
+
 nav .support{
-    margin-top: -100px;
-}
-nav .Hom {
-    display: flex;
+    float: right;
+    margin-top: px;
     justify-content: flex-end; /* Moves it completely to the right */
     width: auto; /* Prevents it from taking full width */
-    margin-left: auto; /* Pushes it to the right */
+    margin-left: auto; /* Pushes it to the right */  
+    margin-top: -30px;
+   
+}
+nav .support ul {
+    float: right;
+    z-index: 1050;
+    position: relative;
+    
 }
 
-nav ul li {
+nav .support ul li {
     float: left;
     list-style: none;
     position: relative;
     font-size: 15px;
-    font-weight: bold;
 }
 
-nav ul li a {
+nav .support ul li a {
     font-size: 18px;
     text-transform: uppercase;
     padding: 5px 5px;
@@ -101,7 +105,7 @@ nav ul li a {
     
 }
 
-nav ul li a:hover {
+nav .support ul li a:hover {
     display: block;
     background: #00b3fff3;
     color: #FFD700;
@@ -110,7 +114,7 @@ nav ul li a:hover {
 }
 
 /* Fixed Dropdown Menu */
-nav ul li ul {
+nav .support ul li ul {
     position: absolute;
     display: none;
     background-color: #003366;
@@ -123,23 +127,95 @@ nav ul li ul {
     margin-top: auto;
 }
 
-nav ul li:hover ul {
+nav .support ul li:hover ul {
     display: block;
 }
 
-nav ul li ul li {
-    line-height: 1.5;
+nav .support ul li ul li {
+    line-height: 2;
     width: auto;
     border-radius: 10px;
 
 }
 
-nav ul li ul li a {
+nav .support ul li ul li a {
     display: block;
     font-size: 18px;
 }
 
-nav ul li ul li a:hover {
+nav .support ul li ul li a:hover {
+    background: #00b3fff3;
+    color: #FFD700;
+}
+
+
+nav .Home {
+    float: right;
+    margin-top: px;
+    justify-content: flex-end; /* Moves it completely to the right */
+    width: auto; /* Prevents it from taking full width */
+    margin-left: 0px; /* Pushes it to the right */  
+    position: relative;
+
+}
+
+
+nav .Home ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    font-size: 15px;
+}
+
+nav .Home ul li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    color: #FFD700;
+    text-decoration: none;
+    font-family: 'Raleway' 'sans-serif';
+    
+}
+
+nav .Home ul li a:hover {
+    display: block;
+    background: #00b3fff3;
+    color: #FFD700;
+    transition: all 0.10s ease-in-out;
+    border-radius: 0 0 20px 0;
+}
+
+/* Fixed Dropdown Menu */
+nav .Home ul li ul {
+    position: absolute;
+    display: none;
+    background-color: #003366;
+    border-radius: 0 0 20px 0;
+    z-index: 1050;
+    width: auto;
+    padding: 5px;
+    top: 100%; /* Pushes the dropdown below the main menu */
+    left: 0;
+    margin-top: auto;
+}
+
+nav .Home ul li:hover ul {
+    display: block;
+}
+
+nav .Home ul li ul li {
+    line-height: 2;
+    width: auto;
+    border-radius: 10px;
+
+}
+
+nav .Home ul li ul li a {
+    display: block;
+    font-size: 18px;
+}
+
+nav .Home ul li ul li a:hover {
     background: #00b3fff3;
     color: #FFD700;
 }
@@ -150,10 +226,10 @@ nav ul li ul li a:hover {
     float: right;
     display: flex;
     align-items: right;
-    width: 500px; /* Adjust width */
+    width: 350px; /* Adjust width */
     height: 30px; /* Adjust height */
     text-align: right;
-    margin-top: 0px;
+    margin-top: -5px;
 }
 
 .search-form input {
@@ -161,8 +237,9 @@ nav ul li ul li a:hover {
     border: none;
     border-radius: 10px 0 0 10px;
     outline: none;
-    width: 2500px; /* Adjust width */
+    width: 300px; /* Adjust width */
     height: 30px;
+    
 }
 
 .search-form button {
@@ -171,12 +248,12 @@ nav ul li ul li a:hover {
     background: #00b3fff3;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
-    width: 200px; /* Adjust width */
+    width: 30px; /* Adjust width */
     height: 30px;
 }
 
 .search-form button:hover {
-    background: #fff;
+    background: #00b3fff3;
 }
 
 /* ================= Hero Section ================= */
@@ -938,7 +1015,8 @@ textarea{
     margin-top: 20px;
     text-align: left;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .footer .Quick ul li{
@@ -949,12 +1027,12 @@ textarea{
     margin-top: -230px;
     text-decoration: none;
     text-align: justify;
-    font-size: 20px;
-    margin-left: 40%;
+    font-size: 18px;
+    margin-left: 35%;
 }
 .footer .contact{
     margin-top: -180px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .footer .contact .fas{
@@ -1164,3 +1242,441 @@ textarea{
 .button:hover{
     background: #00b3fff3;
 }
+
+
+
+/*Responsive Rule*/
+
+@media screen and ( max-width : 492px){
+    nav {
+        display: none;
+    }
+
+    .Mobile {
+        display: inline;
+    }
+
+
+    .Mobile p {
+        font-size: 1px;
+        font-weight: bold;
+        color: #FFD700;
+        float: left;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        font-family: sans-serif;
+        position: relative;
+        margin-left: 200px;
+        top: 10px;
+    }
+    .Mobile img{
+        width: 100px;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    .Mobile .logo .sev {
+        top: -40px;
+        margin-left: -130px;
+    }
+    
+    .Mobile .Tag p {
+        font-size: 10px;
+        float: left;
+        text-transform: uppercase;
+        margin-left: 100px;
+        position: absolute;
+        top: 80px;
+        font-style: italic;
+
+    }
+    
+}
+
+@media screen and (max-width: 1268px){
+    .Access figure {
+        text-align: center; /* Centers the caption */
+        width: 280px; /* Set a fixed width */ 
+        display: flex;
+        flex-direction: column; /* Keeps image and caption in column */
+        align-items: center; /* Centers content */
+        
+    }
+    
+    .Access figure img {
+        width: 100%; /* Makes images responsive */
+        height: 280px; 
+        border-radius: 10px; /* Optional: Adds rounded corners */
+        border: 1px solid #fff;
+        box-shadow: #444 0 0 25px;
+        vertical-align: middle;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+@media screen and ( max-width: 1226px ){
+    
+    nav .support{
+    margin-top: -20px;
+    display: flex;
+    justify-content: flex-end; /* Moves it completely to the right */
+    width: auto; /* Prevents it from taking full width */
+    margin-left: 750px; /* Pushes it to the right */
+
+    }
+}
+
+@media screen and ( max-width: 1030px ){
+
+    nav .support{
+        margin-left: 550px;
+    }
+ 
+.Card{
+    display: flex; /* Aligns items side by side */
+    justify-content: center; /* Centers content horizontally */
+    gap: 20px; /* Adds space between images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin-top: 40px;
+}
+.Card figure{
+    text-align: center; /* Centers the caption */
+    width: 400px; /* Set a fixed width */
+    display: flex;
+    flex-direction: column; /* Keeps image and caption in column */
+    align-items: center; /* Centers content */
+}
+
+.Card figure img{
+    width: 100%; /* Makes images responsive */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+.Card figcaption{
+    text-align: center;
+}
+.Card figcaption h3{
+    font-size: 20px;  /* Adjust text size */
+    color: #264653;  /* Change text color */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Card figcaption p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #264653;
+    text-align: center;
+    font-family: 'Raleway';
+}
+    
+.Trans{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    font-family: 'Raleway';
+}
+.Trans img{
+    width: 400px;
+    border-radius: 10px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.Accommodation{
+    flex: 1;
+}
+.Accommodation h3{
+    font-size: 25px;  /* Adjust text size */
+    color: #264653;  /* Change text color */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Accommodation p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #264653;
+    text-align: justify;
+    font-family: 'Raleway';
+}
+.Trans .Accommodation .More{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #00b3ff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    margin-left: 200px;
+    animation: fadeInUp 1.5s ease-in-out; 
+    border: 1px solid #fff;
+    
+}
+.Trans .Accommodation .More:hover{
+    background: #00b3fff3;
+    color: #FFD700;
+    transform: scale(1.05);
+}
+.Movement{
+    width: 100%;
+    padding: 20px;
+    gap: 1rem;
+    font-family: 'Raleway';
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+
+.Movement .Move{
+    padding: 20px;
+} 
+
+.Movement .Move h3{
+    font-size: 25px;  /* Adjust text size */
+    color: #264653;  /* Change text color */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Movement .Move img{
+    width: 480px;
+    float: right;
+    vertical-align: middle;
+    object-fit: cover;
+    padding-left: 0px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.Movement .Move p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #264653;
+    text-align: justify;
+    font-family: 'Raleway';
+    padding-right: 55%;
+}
+
+.Movement .Move .More{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #00b3ff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+    text-align: center;
+    border: 1px solid #ffffff;
+    margin-left: 110px;
+    
+}
+.Movement .Move .More:hover{
+    background: #FFD700;
+    color: #00b3ff;
+    transform: scale(1.05);
+}
+
+
+.Access {
+    padding: 10px;
+    display: flex; /* Aligns items side by side */
+    justify-content: center; /* Centers content horizontally */
+    gap: 10px; /* Adds space between images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.Access figure {
+    text-align: center; /* Centers the caption */
+    width: 220px; /* Set a fixed width */ 
+    display: flex;
+    flex-direction: column; /* Keeps image and caption in column */
+    align-items: center; /* Centers content */
+    
+}
+
+.Access figure img {
+    width: 100%; /* Makes images responsive */
+    height: 220px; 
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    border: 1px solid #fff;
+    box-shadow: #444 0 0 25px;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Access figcaption {
+    font-size: 15px;
+    margin-top: 10px; /* Adds space between image and caption */
+    max-width: 90%; /* Prevents caption from stretching */
+}
+.Access figcaption p{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+figure .More{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #00b3fff3;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+    margin-bottom: 35px;
+    border: 1px solid #ffffff;
+}
+figure .More:hover{
+    background: #FFD700;
+    color: #00b3fff3;
+    transform: scale(1.05);
+
+}
+
+
+.Airport{
+    padding: 40px;
+    margin-top: 100px;
+}
+/* Swiper Container */
+.swiper {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+/* Individual Slide */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    border-radius:10px;
+    box-shadow: #777 0 0 10px;
+    border: 1px solid #fff;
+    text-align: center;
+    width: 400px; /* Adjust width slightly smaller than 400px to fit layout */
+    height: 83vh;
+}
+
+/* Image inside the card */
+.card .image {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card .image img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: #777 0 0 10px;
+    border: 1px solid #fff;
+}
+
+/* Adjust Navigation Buttons */
+.swiper-button-next, .swiper-button-prev {
+    color: #FFD700; /* Gold color */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 10px; /* Make them larger */
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Move arrows slightly outside the images */
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+/* Pagination Styling */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 15px;
+    background-color: #00b3fff3;
+    border-radius: 8px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+}
+.button:hover{
+    background: #00b3fff3;
+}
+.card{
+    margin-bottom: 20px;
+}
+.Quick{
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer .Quick ul li{
+    list-style: none;   
+}
+
+.footer .services{
+    margin-top: -210px;
+    text-decoration: none;
+    text-align: justify;
+    font-size: 16px;
+    margin-left: 40%;
+}
+.footer .contact{
+    margin-top: -170px;
+    font-size: 16px;
+}
+.social-newsletter{
+    width: 100%;
+    margin: 20px;
+    margin-top: 100px;
+}
+.footer-bottom p{
+    width: 100%;
+    text-align: center;
+    margin-left: 90%;
+}
+
+      
+}
+

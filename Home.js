@@ -11,3 +11,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(moveSlide, 4000); // Slide every 4 seconds
 });
+

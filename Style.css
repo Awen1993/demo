@@ -7,17 +7,18 @@
 
 body{
     width: 100%;
-    background-image: url(Pictures/plane.jpg);
+    /*background-image: url(Pictures/plane.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: var(--nav-color);
+    /*background-color: rgba(255, 255, 255, 0.4);*/
     background-blend-mode: overlay;
 }
-/*.support {
-    bottom: 0px;
-}*/
+.light{
+    background-color: var(--nav-color);
+}
 
 nav .fa{
     margin-right: 6px;
@@ -32,7 +33,7 @@ nav {
     width: 100%;
     height: 25vh;
     padding: 0;
-    background-image: url(Pictures/blue.jpg);
+    /*background-image: url(Pictures/blue.jpg);*/
     position: relative;
    
 }
@@ -162,16 +163,23 @@ nav .Home {
     position: relative;
 
 }
-
-
-nav .Home ul li {
+/*nav-bar*/
+nav .menu ul li ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    font-size: 15px;
+}
+/*==============================*/
+/*New Nav*/
+nav .menu ul li {
     float: left;
     list-style: none;
     position: relative;
     font-size: 15px;
 }
 
-nav .Home ul li a {
+nav .menu ul li a {
     font-size: 18px;
     text-transform: uppercase;
     padding: 5px 5px;
@@ -181,7 +189,7 @@ nav .Home ul li a {
     
 }
 
-nav .Home ul li a:hover {
+nav .menu ul li a:hover {
     display: block;
     background: #00b3fff3;
     color: #FFD700;
@@ -190,7 +198,7 @@ nav .Home ul li a:hover {
 }
 
 /* Fixed Dropdown Menu */
-nav .Home ul li ul {
+nav .menu ul li ul {
     position: absolute;
     display: none;
     background-color: #003366;
@@ -203,27 +211,29 @@ nav .Home ul li ul {
     margin-top: auto;
 }
 
-nav .Home ul li:hover ul {
+nav .menu ul li:hover ul {
     display: block;
 }
 
-nav .Home ul li ul li {
+nav .menu ul li ul li {
     line-height: 2;
     width: auto;
     border-radius: 10px;
+    display: list-item;
 
 }
 
-nav .Home ul li ul li a {
+nav .menu ul li ul li a {
     display: block;
-    font-size: 18px;
+    font-size: 15px;
 }
 
-nav .Home ul li ul li a:hover {
+nav .menu ul li ul li a:hover {
     background: #00b3fff3;
     color: #FFD700;
 }
 
+/*================================*/
 
 /* Search Bar Styling */
 .search-form {
@@ -436,8 +446,9 @@ nav .Home ul li ul li a:hover {
 }
 
 .features h1 {
-    font-size: 36px;  /* Adjust text size */
-    color: #264653;  /* Change text color */
+    font-size: 25px;  /* Adjust text size */
+    font-weight: 500;
+    color: #FFD700;  /* Change text color */
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -448,7 +459,7 @@ nav .Home ul li ul li a:hover {
     margin-bottom: 20px;
     font-weight: 500px;
     line-height: 30px;
-    color: #264653;
+    color: var(--text-color);
     /*margin-left: 20px;*/
     text-align: justify;
     font-family: 'Raleway';
@@ -464,11 +475,11 @@ nav .Home ul li ul li a:hover {
 
 }
 .Pre h2{
-    font-size: 36px;  /* Adjust text size */
-    color: #264653;  /* Change text color */
+    font-size: 25px;  /* Adjust text size */
+    color: #FFD700;  /* Change text color */
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     /*margin-left: 30px;*/
 }
 
@@ -477,23 +488,26 @@ nav .Home ul li ul li a:hover {
     margin-bottom: 20px;
     font-weight: 500px;
     line-height: 30px;
-    color: #264653;
+    color: var(--text-color);
     /*margin-left: 20px;*/
    
     text-align: justify;
     font-family: 'Raleway';
 }
 .Pre .Tre h3{
-    font-size: 25px;  /* Adjust text size */
-    color: #264653;  /* Change text color */
+    font-size: 20px;  /* Adjust text size */
+    color: #FFD700;  /* Change text color */
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+.Tre p{
+    margin: 20px;
+}
+
 .Pre .Tre{
     text-align: center;
-    border: 1px solid #fff;
-    box-shadow: #777 0 0 25px;
+
 }
 .Pre img{
     width: 600px;
@@ -513,8 +527,14 @@ nav .Home ul li ul li a:hover {
     border-radius: 8px;
     transition: 0.3s ease-in-out;
     animation: fadeInUp 1.5s ease-in-out;   
-    border: 1px solid #ffffff;    
+    border: 1px solid #ffffff; 
+    margin-bottom: 20px;   
 }
+.Pre .Tre a{
+    text-decoration: none;
+}
+
+
 .Pre .Tre .More:hover{
     background: #FFD700;
     color: #00b3ff;
@@ -546,18 +566,18 @@ nav .Home ul li ul li a:hover {
     text-align: center;
 }
 .Card figcaption h3{
-    font-size: 25px;  /* Adjust text size */
-    color: #264653;  /* Change text color */
+    font-size: 20px;  /* Adjust text size */
+    color: #FFD700;  /* Change text color */
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .Card figcaption p{
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
     font-weight: 500px;
     line-height: 30px;
-    color: #264653;
+    color: var(--text-color);
     text-align: center;
     font-family: 'Raleway';
 }
@@ -582,7 +602,7 @@ nav .Home ul li ul li a:hover {
 }
 .Accommodation h3{
     font-size: 25px;  /* Adjust text size */
-    color: #264653;  /* Change text color */
+    color: #FFD700;  /* Change text color */
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -592,10 +612,15 @@ nav .Home ul li ul li a:hover {
     margin-bottom: 20px;
     font-weight: 500px;
     line-height: 30px;
-    color: #264653;
+    color: var(--text-color);
     text-align: justify;
     font-family: 'Raleway';
 }
+
+.Trans .Accommodation a{
+    text-decoration: none;
+}
+
 .Trans .Accommodation .More{
     display: inline-block;
     padding: 8px 15px;
@@ -630,7 +655,7 @@ nav .Home ul li ul li a:hover {
 
 .Movement .Move h3{
     font-size: 25px;  /* Adjust text size */
-    color: #264653;  /* Change text color */
+    color: #FFD700;  /* Change text color */
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -648,10 +673,13 @@ nav .Home ul li ul li a:hover {
     margin-bottom: 20px;
     font-weight: 500px;
     line-height: 30px;
-    color: #264653;
+    color: var(--text-color);
     text-align: justify;
     font-family: 'Raleway';
     padding-right: 55%;
+}
+.Movement .Move a{
+    text-decoration: none;
 }
 
 .Movement .Move .More{
@@ -684,18 +712,18 @@ nav .Home ul li ul li a:hover {
 }
 
 .Education h2{
-    font-size: 36px;  /* Adjust text size */
-    color: #264653;  /* Change text color */
+    font-size: 25px;  /* Adjust text size */
+    color: #FFD700;  /* Change text color */
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .Education P{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     font-weight: 500px;
     line-height: 30px;
-    color: #264653;
+    color: var(--text-color);
     text-align: justify;
     font-family: 'Raleway';
 }
@@ -724,22 +752,28 @@ nav .Home ul li ul li a:hover {
     height: 300px; 
     border-radius: 10px; /* Optional: Adds rounded corners */
     border: 1px solid #fff;
-    box-shadow: #444 0 0 25px;
+    box-shadow: #444 0 0 10px;
     vertical-align: middle;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .Access figcaption {
+    color: #FFD700;
     font-size: 16px;
     margin-top: 10px; /* Adds space between image and caption */
     max-width: 90%; /* Prevents caption from stretching */
 }
 .Access figcaption p{
-    margin-bottom: 40px;
+    color: var(--text-color);
+    margin-bottom: 20px;
     margin-top: 20px;
     text-align: center;
     font-size: 18px;
+}
+
+figure .More a{
+    text-decoration: none;
 }
 
 figure .More{
@@ -779,7 +813,7 @@ figure .More:hover{
 /* Title Styling */
 .help-section h2 {
     font-size: 2.8rem;
-    color: #111; /* Gold color */
+    color: #FFD700; /* Gold color */
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -912,14 +946,13 @@ figure .More:hover{
     padding: 40px;
     text-align: center;
     /*background: #f5f5f5;*/   
-    border: 1px solid #fff;
-    box-shadow: gray 0 0 10px;
     border-radius: 0%;
     margin-bottom: 40px;
 }
 .Contact h2{
     font-size: 28px;
     margin-bottom: 20px;
+    color: #FFD700;
 }
 
 .form-group{
@@ -967,13 +1000,11 @@ textarea{
 /* Footer Styles */
 
   footer {
-    color: #000;
+    color: #FFD700;
     padding: 50px 20px;
     text-align: center;
     width: 100%;
     border-radius: 10px;
-    border: 1px solid #ffffff;
-    box-shadow: #777 0 0 10px;
 
 }
 
@@ -1005,6 +1036,7 @@ textarea{
 }
 .footer .footer-container p{
     text-align: justify;
+    color: var(--text-color);
 }
 
 /* Footer Sections */
@@ -1014,49 +1046,33 @@ textarea{
    line-height: 30px;
 }
 
-.Quick{
-    width: 100%;
-    margin-top: 20px;
-    text-align: left;
-    text-decoration: none;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.footer .Quick ul li{
-    list-style: none;   
-}
-
-.footer .services{
-    margin-top: -230px;
-    text-decoration: none;
-    text-align: justify;
-    font-size: 18px;
-    margin-left: 35%;
-}
-.footer .contact{
-    margin-top: -180px;
-    font-size: 18px;
-}
-
-.footer .contact .fas{
-    color: #00b3ff;
-}
-
-.footer .services ul{
+.footer .details{
+    display: flex;
+    margin-top: 40px;
     list-style: none;
+}
+
+.footer .details h3{
+     margin: 15px;
+}
+
+.footer .details ul {
+    color: var(--text-color);
+    list-style: none;
+}
+.footer .details a{
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .get-in-touch{
     margin-top: 0px;
-    border: 1px solid #fff;
-    box-shadow: #777 0 0 25px;
     border-radius: 10px;
     width: 100%;
     text-align: center;
 }
 .get-in-touch h3{
+   color: #FFD700;
    font-size: 25px;
    margin-bottom: 20px;
 }
@@ -1160,7 +1176,9 @@ textarea{
 
 .Airport{
     padding: 40px;
-    margin-top: 100px;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
 }
 /* Swiper Container */
 .swiper {
@@ -1182,8 +1200,8 @@ textarea{
     box-shadow: #777 0 0 10px;
     border: 1px solid #fff;
     text-align: center;
-    width: 380px; /* Adjust width slightly smaller than 400px to fit layout */
-    height: 83vh;
+    width: 360px; /* Adjust width slightly smaller than 400px to fit layout */
+    height: 100vh;
 }
 
 /* Image inside the card */
@@ -1200,7 +1218,7 @@ textarea{
     vertical-align: middle;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: #777 0 0 10px;
+    box-shadow: #777 0 0 1px;
     border: 1px solid #fff;
 }
 
@@ -1235,18 +1253,37 @@ textarea{
     border: none;
     font-size: 16px;
     color: #fff;
-    padding: 8px 15px;
-    background-color: #00b3fff3;
-    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 10px;
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
     border: 1px solid #fff;
 }
 .button:hover{
-    background: #00b3fff3;
+    background: #265df2;
 }
 
+.button a{
+    text-decoration: none;
+}
+
+.Airport .description{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;  
+}
+.Airport .name-profession h2{
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;  
+    color: #FFD700;
+}
+.Airport .name-profession p{
+    color: var(--text-color);
+}
 
 
 /*Responsive Rule*/

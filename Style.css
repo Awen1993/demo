@@ -591,15 +591,18 @@ nav .menu ul li ul li a:hover {
     gap: 4rem;
     font-family: 'Raleway';
 }
+
 .Trans img{
     width: 600px;
     border-radius: 10px;
     vertical-align: middle;
     object-fit: cover;
 }
+
 .Accommodation{
     flex: 1;
 }
+
 .Accommodation h3{
     font-size: 25px;  /* Adjust text size */
     color: #FFD700;  /* Change text color */
@@ -607,6 +610,7 @@ nav .menu ul li ul li a:hover {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 .Accommodation p{
     font-size: 20px;
     margin-bottom: 20px;
@@ -640,35 +644,37 @@ nav .menu ul li ul li a:hover {
     color: #FFD700;
     transform: scale(1.05);
 }
+
 .Movement{
     width: 100%;
     padding: 20px;
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem;
     font-family: 'Raleway';
-    justify-content: space-between;
-    margin-bottom: 20px;
- }
+}
 
-.Movement .Move{
-    padding: 20px;
-} 
+.Movement img{
+    width: 600px;
+    border-radius: 10px;
+    vertical-align: middle;
+    object-fit: cover;
+}
 
-.Movement .Move h3{
+.Move{
+    flex: 1;
+}
+
+.Move h3{
     font-size: 25px;  /* Adjust text size */
     color: #FFD700;  /* Change text color */
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.Movement .Move img{
-    width: 600px;
-    float: right;
-    vertical-align: middle;
-    object-fit: cover;
-    padding-left: 0px;
-    border-radius: 10px;
-}
-.Movement .Move p{
+
+.Move p{
     font-size: 20px;
     margin-bottom: 20px;
     font-weight: 500px;
@@ -676,8 +682,8 @@ nav .menu ul li ul li a:hover {
     color: var(--text-color);
     text-align: justify;
     font-family: 'Raleway';
-    padding-right: 55%;
 }
+
 .Movement .Move a{
     text-decoration: none;
 }
@@ -689,19 +695,23 @@ nav .menu ul li ul li a:hover {
     color: #ffffff;
     background: #00b3ff;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     transition: 0.3s ease-in-out;
-    animation: fadeInUp 1.5s ease-in-out;
-    text-align: center;
-    border: 1px solid #ffffff;
     margin-left: 200px;
+    animation: fadeInUp 1.5s ease-in-out; 
+    border: 1px solid #fff;
     
 }
 .Movement .Move .More:hover{
-    background: #FFD700;
-    color: #00b3ff;
+    background: #00b3fff3;
+    color: #FFD700;
     transform: scale(1.05);
 }
+
+.Movement-Mobile{
+    display: none;
+}
+
 
 .Education{
     position: relative;;
@@ -943,9 +953,8 @@ figure .More:hover{
     max-width: 100%;
     height: auto;
     margin: auto;
-    padding: 40px;
-    text-align: center;
-    /*background: #f5f5f5;*/   
+    padding: 20px;
+    text-align: center;   
     border-radius: 0%;
     margin-bottom: 40px;
 }
@@ -955,24 +964,40 @@ figure .More:hover{
     color: #FFD700;
 }
 
-.form-group{
+.Contact .form-group{
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    width: 100%;
 }
 
-input, textarea{
-    width: 48%;
+.Contact .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+.Contact input, 
+.Contact textarea{
+    width: 100%;
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 10px;
 
 }
 
-textarea{
+.Contact textarea{
     width: 100%;
     height: 200px;
     font-size: 16px;
+}
+.Contact .enquiry{
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 0px 10px 0px;
 }
 
 .form-check{
@@ -990,6 +1015,7 @@ textarea{
     font-size: 16px;
     cursor: pointer;
 
+
 }
 
 .bt:hover{
@@ -997,26 +1023,12 @@ textarea{
     color: #00b3fff3;
 }
 
-/* Footer Styles */
-
-  footer {
-    color: #FFD700;
-    padding: 50px 20px;
-    text-align: center;
-    width: 100%;
-    border-radius: 10px;
-
-}
-
-/* Footer Container */
-
+/* Footer Styling */
 .footer {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
+   /* background-color: #222;*/
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .footer-container {
@@ -1024,152 +1036,176 @@ textarea{
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
-    text-align: left;
-}
-.footer .footer-container img{
-    width: 150px;
-    margin-bottom: 20px;
-    
-}
-.footer .footer-container h2{
-    text-align: left;
-}
-.footer .footer-container p{
-    text-align: justify;
-    color: var(--text-color);
+    margin: auto;
 }
 
-/* Footer Sections */
-.footer-section {
-   text-align: left;
-   padding-right: 0px;
-   line-height: 30px;
+/* Responsive Footer Logo */
+.footer img {
+    max-width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 20px;
 }
 
-.footer .details{
-    display: flex;
-    margin-top: 40px;
+.footer-section,
+.details,
+.get-in-touch,
+.social-newsletter {
+    flex: 1;
+    min-width: 280px;
+    margin: 15px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f8b400;
+}
+
+.footer p,
+.footer ul {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer ul {
     list-style: none;
+    padding: 0;
 }
 
-.footer .details h3{
-     margin: 15px;
+.footer ul li {
+    margin: 5px 0;
 }
 
-.footer .details ul {
-    color: var(--text-color);
-    list-style: none;
-}
-.footer .details a{
-    color: var(--text-color);
+.footer ul li a {
+    color: #ddd;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-.get-in-touch{
-    margin-top: 0px;
-    border-radius: 10px;
+.footer ul li a:hover {
+    color: #f8b400;
+}
+
+/* Responsive Form */
+.get-in-touch form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
     width: 100%;
-    text-align: center;
-}
-.get-in-touch h3{
-   color: #FFD700;
-   font-size: 25px;
-   margin-bottom: 20px;
 }
 
-.form-group {
+
+.get-in-touch .form-group{
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-.form-group input,
-.form-group select,
-.form-group textarea {
+    margin-bottom: 15px;
     width: 100%;
-    padding: 10px;
-    border: none;
+}
+
+.get-in-touch input,
+.get-in-touch select,
+.get-in-touch textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
-}
-
-.checkbox {
-    display: flex;
-    align-items: center;
-    font-size: 0.9rem;
-    margin-bottom: 30px;
-    
-}
-
-.checkbox label {
-    margin-left: 10px;
-}
-.checkbox input{
-    margin: 0px; 
 }
 
 .send-button {
-    margin-left: 20px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    background: #00b3ff;
-    color: #fff;
-    padding: 8px 15px;
-    font-size: 1rem;
+    background: #f8b400;
+    color: #222;
     border: none;
+    padding: 10px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 6px;
-    transition: 0.3s;
-    border: 1px solid #ffff;
+    transition: background 0.3s;
 }
 
 .send-button:hover {
-    background: #FFD700;
-    color: #00b3fff3;
+    background: #e09e00;
 }
 
-/* Social Media Icons */
-
-.social-newsletter{
-    width: 100%;
-    margin: 20px;
-    margin-top: 100px;
-}
+/* Social Media */
 .social-icons {
-    text-align: center;
-    color: #000;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+    flex-wrap: wrap;
 }
 
 .social-icons a {
-    font-size: 2rem;
-    margin: 15px;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
     color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
 }
 
 .social-icons a:hover {
-    color: #FFD700;
+    color: #f8b400;
 }
 
-.footer-bottom p{
-    width: 100%;
-    text-align: center;
-    margin-left: 125%;
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    font-size: 12px;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
-}
+    
+    .footer-section,
+    .details,
+    .get-in-touch,
+    .social-newsletter {
+        text-align: center;
+        min-width: 100%;
+        padding: 10px;
+    }
+    
+    .footer img {
+        max-width: 100px;
+        height: 100px;
+    }
+    
+    .get-in-touch input,
+    .get-in-touch select,
+    .get-in-touch textarea {
+        font-size: 14px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
 
+    .footer-bottom {
+        position: absolute;
+        margin-top: 0px;
+        padding-top: -0px;
+        font-size: 12px;
+        padding: 0px;
+        margin-left: -150px
+        
+    }
+    .footer-bottom p{
+        position: relative;
+        margin-top: 0px;
+        padding-top: -0px;
+        font-size: 12px;
+        padding: 0px;
+        margin-left: 200px
+        
+    }
+        
+    
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -1660,44 +1696,49 @@ textarea{
     color: #FFD700;
     transform: scale(1.05);
 }
+
+
 .Movement{
     width: 100%;
     padding: 20px;
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem;
     font-family: 'Raleway';
-    justify-content: space-between;
-    margin-bottom: 20px;
- }
+}
 
-.Movement .Move{
-    padding: 20px;
-} 
+.Movement img{
+    width: 600px;
+    border-radius: 10px;
+    vertical-align: middle;
+    object-fit: cover;
+}
 
-.Movement .Move h3{
+.Move{
+    flex: 1;
+}
+
+.Move h3{
     font-size: 25px;  /* Adjust text size */
-    color: #264653;  /* Change text color */
+    color: #FFD700;  /* Change text color */
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.Movement .Move img{
-    width: 480px;
-    float: right;
-    vertical-align: middle;
-    object-fit: cover;
-    padding-left: 0px;
-    border-radius: 10px;
-    margin-top: 40px;
-}
-.Movement .Move p{
-    font-size: 18px;
+
+.Move p{
+    font-size: 20px;
     margin-bottom: 20px;
     font-weight: 500px;
     line-height: 30px;
-    color: #264653;
+    color: var(--text-color);
     text-align: justify;
     font-family: 'Raleway';
-    padding-right: 55%;
+}
+
+.Movement .Move a{
+    text-decoration: none;
 }
 
 .Movement .Move .More{
@@ -1707,17 +1748,16 @@ textarea{
     color: #ffffff;
     background: #00b3ff;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     transition: 0.3s ease-in-out;
-    animation: fadeInUp 1.5s ease-in-out;
-    text-align: center;
-    border: 1px solid #ffffff;
-    margin-left: 110px;
+    margin-left: 200px;
+    animation: fadeInUp 1.5s ease-in-out; 
+    border: 1px solid #fff;
     
 }
 .Movement .Move .More:hover{
-    background: #FFD700;
-    color: #00b3ff;
+    background: #00b3fff3;
+    color: #FFD700;
     transform: scale(1.05);
 }
 

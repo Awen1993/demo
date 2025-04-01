@@ -574,6 +574,154 @@ body.dark .search-field i{
     }*/
 }
 
+@media (max-width: 768px) {
+    .features h1 {
+        font-size: 1.5rem;
+    }
+
+    .features p {
+        font-size: 1rem;
+    }
+
+    .Pre h2{
+        font-size: 1.5rem;
+    }
+
+    .Pre p{
+        font-size: 1rem;
+    }
+
+    .Pre img{
+        width: 400px;
+    }
+
+    .Card figcaption h3{
+        color: #FFD700;
+    }
+
+    .Card figcaption p{
+        color: var(--text-color);
+    }
+
+    .Accommodation h3{
+        margin-top: 5px;
+        font-size: 1.5rem;
+        color: #FFD700;
+    }
+
+    .Accommodation p{
+        margin-top: 5px;
+        font-size: 1rem;
+        color: var(--text-color);
+        
+    }
+
+    .Movement{
+        display: none;
+    }
+    
+    .Movement-Mobile{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0rem;
+        font-family: 'Raleway';
+    }
+    
+    .Movement-Mobile img{
+        width: 400px;
+        border-radius: 10px;
+        vertical-align: middle;
+        object-fit: cover;
+    }
+    
+    .Movement-Mobile{
+        flex: 1;
+    }
+    
+    .Movement-Mobile h3{
+        font-size: 1.5rem;  /* Adjust text size */
+        color: #FFD700;  /* Change text color */
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .Movement-Mobile p{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        font-weight: 500px;
+        line-height: 30px;
+        color: var(--text-color);
+        text-align: justify;
+        font-family: 'Raleway';
+    }
+    
+    .Movement-Mobile .Move a{
+        text-decoration: none;
+    }
+    
+    .Movement-Mobile .Move .More{
+        display: inline-block;
+        padding: 8px 15px;
+        font-size: 1rem;
+        color: #ffffff;
+        background: #00b3ff;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s ease-in-out;
+        margin-left: 200px;
+        animation: fadeInUp 1.5s ease-in-out; 
+        border: 1px solid #fff;
+        
+    }
+    .Movement-Mobile .Move .More:hover{
+        background: #00b3fff3;
+        color: #FFD700;
+        transform: scale(1.05);
+    }
+    .travel-assistance {
+        height: 130vh;
+    }
+
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section,
+    .details,
+    .get-in-touch,
+    .social-newsletter {
+        text-align: center;
+        min-width: 100%;
+        padding: 10px;
+    }
+    
+    .footer img {
+        max-width: 120px;
+    }
+    
+    .get-in-touch input,
+    .get-in-touch select,
+    .get-in-touch textarea {
+        font-size: 14px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+
+   
 
 
 

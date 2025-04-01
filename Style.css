@@ -1041,8 +1041,8 @@ figure .More:hover{
 
 /* Responsive Footer Logo */
 .footer img {
-    max-width: 150px;
-    height: 150px;
+    max-width: 120px;
+    height: 100px;
     display: block;
     margin: 0 auto 20px;
 }

@@ -750,7 +750,7 @@ nav .menu ul li ul li a:hover {
 
 .Access figure {
     text-align: center; /* Centers the caption */
-    width: 300px; /* Set a fixed width */ 
+    width: 250px; /* Set a fixed width */ 
     display: flex;
     flex-direction: column; /* Keeps image and caption in column */
     align-items: center; /* Centers content */
@@ -759,18 +759,20 @@ nav .menu ul li ul li a:hover {
 
 .Access figure img {
     width: 100%; /* Makes images responsive */
-    height: 300px; 
+    height: 250px; 
     border-radius: 10px; /* Optional: Adds rounded corners */
     border: 1px solid #fff;
     box-shadow: #444 0 0 10px;
     vertical-align: middle;
     object-fit: cover;
     border-radius: 50%;
+    gap: 20px;
+
 }
 
 .Access figcaption {
     color: #FFD700;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 10px; /* Adds space between image and caption */
     max-width: 90%; /* Prevents caption from stretching */
 }
@@ -779,7 +781,7 @@ nav .menu ul li ul li a:hover {
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 figure .More a{

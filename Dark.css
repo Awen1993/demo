@@ -574,7 +574,47 @@ body.dark .search-field i{
     }*/
 }
 
-@media (max-width: 768px) {
+
+
+/* Responsive Design */
+@media (max-width: 1034px) {
+    .Card figure{
+        text-align: center; /* Centers the caption */
+        width: 400px; /* Set a fixed width */
+        display: flex;
+        flex-direction: column; /* Keeps image and caption in column */
+        align-items: center; /* Centers content */
+    }
+
+    .Card figure img{
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 890px) {
+
+    .Card figure{
+        text-align: center; /* Centers the caption */
+        width: 400px; /* Set a fixed width */
+        display: flex;
+        flex-direction: column; /* Keeps image and caption in column */
+        align-items: center; /* Centers content */
+    }
+
+    .Card figure img{
+        width: 100%;
+
+    }
+
+    .Trans img{
+        width: 400px;
+    }
+
+    .Movement{
+        display: none;
+    }
+
     .features h1 {
         font-size: 1.5rem;
     }
@@ -616,75 +656,130 @@ body.dark .search-field i{
         
     }
 
-    .Movement{
-        display: none;
-    }
-    
     .Movement-Mobile{
-        width: 100%;
-        padding: 20px;
+       display: none;
+    }
+
+    .Movement{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 0rem;
-        font-family: 'Raleway';
     }
-    
-    .Movement-Mobile img{
+
+    .Movement img{
         width: 400px;
-        border-radius: 10px;
-        vertical-align: middle;
-        object-fit: cover;
     }
-    
-    .Movement-Mobile{
-        flex: 1;
+
+    .Movement h3{
+        margin-top: 5px;
+        font-size: 1.5rem;
+        color: #FFD700;
     }
-    
-    .Movement-Mobile h3{
-        font-size: 1.5rem;  /* Adjust text size */
-        color: #FFD700;  /* Change text color */
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .Movement-Mobile p{
+
+    .Movement p{
+        margin-top: 5px;
         font-size: 1rem;
-        margin-bottom: 20px;
-        font-weight: 500px;
-        line-height: 30px;
         color: var(--text-color);
-        text-align: justify;
-        font-family: 'Raleway';
-    }
-    
-    .Movement-Mobile .Move a{
-        text-decoration: none;
-    }
-    
-    .Movement-Mobile .Move .More{
-        display: inline-block;
-        padding: 8px 15px;
-        font-size: 1rem;
-        color: #ffffff;
-        background: #00b3ff;
-        text-decoration: none;
-        border-radius: 8px;
-        transition: 0.3s ease-in-out;
-        margin-left: 200px;
-        animation: fadeInUp 1.5s ease-in-out; 
-        border: 1px solid #fff;
         
     }
-    .Movement-Mobile .Move .More:hover{
-        background: #00b3fff3;
+   
+}
+
+@media (max-width: 832px){
+    .Card figure{
+        text-align: center; /* Centers the caption */
+        width: 300px; /* Set a fixed width */
+        display: flex;
+        flex-direction: column; /* Keeps image and caption in column */
+        align-items: center; /* Centers content */
+    }
+
+    .Card figure img{
+        width: 100%;
+       
+      
+    }
+
+    .Card figcaption p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 790px){
+    .Movement img{
+        width: 300px;
+    }
+
+    .Trans img{
+        width: 300px;
+    }
+    .help-section {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .travel-assistance{
+        height: auto;
+    }
+
+    
+
+
+}
+@media (max-width: 768px) {
+    .Card figure{
+        text-align: center; /* Centers the caption */
+        width: 400px; /* Set a fixed width */
+        display: flex;
+        
+        flex-direction: column; /* Keeps image and caption in column */
+        align-items: center; /* Centers content */
+    }
+
+    .Card figure img{
+        width: 100%;
+        gap: 10px;
+    }
+    .features h1 {
+        font-size: 1.5rem;
+    }
+
+    .features p {
+        font-size: 1rem;
+    }
+
+    .Pre h2{
+        font-size: 1.5rem;
+    }
+
+    .Pre p{
+        font-size: 1rem;
+    }
+
+    .Pre img{
+        width: 400px;
+    }
+
+    .Card figcaption h3{
         color: #FFD700;
-        transform: scale(1.05);
     }
-    .travel-assistance {
-        height: 130vh;
+
+    .Card figcaption p{
+        color: var(--text-color);
     }
+
+    .Accommodation h3{
+        margin-top: 5px;
+        font-size: 1.5rem;
+        color: #FFD700;
+    }
+
+    .Accommodation p{
+        margin-top: 5px;
+        font-size: 1rem;
+        color: var(--text-color);
+        
+    }
+
 
 }
 
@@ -719,15 +814,52 @@ body.dark .search-field i{
     }
 }
 
+@media (max-width: 768px) {
+    .Card figure img{
+        width: 450px;
+    }
 
+    .Movement-Mobile {
+        padding: 10px;
+    }
+    .Movement-Mobile h3 {
+        font-size: 1.2rem;
+    }
+    .Movement-Mobile p {
+        font-size: 0.9rem;
+    }
+    .Movement-Mobile img {
+        max-width: 450px;
+    }
 
+    .Trans img{
+        max-width: 450px;
+    }
+
+    .Movement-Mobile .Move .More {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Movement-Mobile img {
+        max-width: 100%;
+    }
+    .Movement-Mobile p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+    .Movement-Mobile .Move .More {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+    .Trans img{
+        max-width: 100%;
+    }
+
+    .Card figure img{
+        max-width: 100%;
+    }
    
-
-
-
-
-
-
-
-
-
+}

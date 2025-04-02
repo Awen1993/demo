@@ -425,7 +425,7 @@
   </div>
 </section>
 
-<section class="Tran">
+<section class="Mobile">
     <div class="Trans-Mob">
      <img src="Pictures/Accomodation1.jpg" alt="Accommodation">
        <div class="Accommodation">
@@ -455,7 +455,7 @@
  
 
 
-<section class="Tran">
+<section class="Mobility">
     <div class="Trans-Mobile">
      <img src="Pictures/Accomodation1.jpg" alt="Accommodation">
        <div class="Accommodation">
@@ -671,6 +671,7 @@
     impact in Ghanaian classrooms.
      </p>
 </section>
+
  <section class="Access">
     <figure class="House">
         <img src="Pictures/Teacher 2.jpg" alt="Teaching Placement">
@@ -967,6 +968,28 @@
         }
     });
 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,  // Default: Show 3 slides at a time
+    spaceBetween: 10,  // Default spacing
+    loop: true,        // Enable continuous scrolling
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,  // Auto-slide every 3 seconds
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        1200: { slidesPerView: 3, spaceBetween: 10 }, // Large screens
+        992: { slidesPerView: 2, spaceBetween: 10 },  // Medium screens (Tablets)
+        768: { slidesPerView: 1, spaceBetween: 5 },   // Small screens (Phones)
+    }
+});
 
 
 

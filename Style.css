@@ -510,6 +510,7 @@ nav .menu ul li ul li a:hover {
 
 }
 .Pre img{
+    max-width: 100%;
     width: 600px;
     border-radius: 10px;
     vertical-align: middle;
@@ -559,6 +560,7 @@ nav .menu ul li ul li a:hover {
 }
 
 .Card figure img{
+    max-width: 100%;
     width: 100%; /* Makes images responsive */
     border-radius: 10px; /* Optional: Adds rounded corners */
 }
@@ -593,6 +595,7 @@ nav .menu ul li ul li a:hover {
 }
 
 .Trans img{
+    max-width: 100%;
     width: 500px;
     border-radius: 10px;
     vertical-align: middle;
@@ -647,12 +650,19 @@ nav .menu ul li ul li a:hover {
 
 /*----Trans-Mobile--*/
 
-.Trans-Mobile{
+.Mobility{
     display: none;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem;
+    font-family: 'Raleway';
    
 }
 
-.Trans-Mobile img{
+.Mobility .Trans-Mobile img{
+    max-width: 100%;
     width: 500px;
     border-radius: 10px;
     vertical-align: middle;
@@ -663,7 +673,7 @@ nav .menu ul li ul li a:hover {
     flex: 1;
 }
 
-.Accommodation h3{
+.Mobility .Accommodation h3{
     font-size: 25px;  
     color: #FFD700;  
     text-align: center;
@@ -671,7 +681,7 @@ nav .menu ul li ul li a:hover {
     margin-bottom: 40px;
 }
 
-.Accommodation p{
+.Mobility .Accommodation p{
     font-size: 20px;
     margin-bottom: 20px;
     font-weight: 500px;
@@ -681,11 +691,11 @@ nav .menu ul li ul li a:hover {
     font-family: 'Raleway';
 }
 
-.Trans-Mobile .Accommodation a{
+.Mobility .Accommodation a{
     text-decoration: none;
 }
 
-.Trans-Mobile .Accommodation .More{
+.Mobility  .Accommodation .More{
     display: inline-block;
     padding: 8px 15px;
     font-size: 1rem;
@@ -699,7 +709,7 @@ nav .menu ul li ul li a:hover {
     border: 1px solid #fff;
     
 }
-.Trans-Mobile .Accommodation .More:hover{
+.Mobility .Accommodation .More:hover{
     background: #00b3fff3;
     color: #FFD700;
     transform: scale(1.05);
@@ -707,12 +717,19 @@ nav .menu ul li ul li a:hover {
 
 /*Trans-Mob*/
 
-.Trans-Mob{
+.Mobile{
     display: none;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem;
+    font-family: 'Raleway';
    
 }
 
-.Trans-Mob img{
+.Mobile img{
+    max-width: 100%;
     width: 500px;
     border-radius: 10px;
     vertical-align: middle;
@@ -741,11 +758,11 @@ nav .menu ul li ul li a:hover {
     font-family: 'Raleway';
 }
 
-.Trans-Mob .Accommodation a{
+.Mobile .Accommodation a{
     text-decoration: none;
 }
 
-.Trans-Mob .Accommodation .More{
+.Mobile .Accommodation .More{
     display: inline-block;
     padding: 8px 15px;
     font-size: 1rem;
@@ -759,7 +776,8 @@ nav .menu ul li ul li a:hover {
     border: 1px solid #fff;
     
 }
-.Trans-Mob .Accommodation .More:hover{
+
+.Mobile .Accommodation .More:hover{
     background: #00b3fff3;
     color: #FFD700;
     transform: scale(1.05);
@@ -776,6 +794,7 @@ nav .menu ul li ul li a:hover {
 }
 
 .Movement img{
+    max-width: 100%;
     width: 500px;
     border-radius: 10px;
     vertical-align: middle;
@@ -878,6 +897,7 @@ nav .menu ul li ul li a:hover {
 }
 
 .Access figure img {
+    max-width: 100%;
     width: 100%; /* Makes images responsive */
     height: 250px; 
     border-radius: 10px; /* Optional: Adds rounded corners */
@@ -1353,24 +1373,24 @@ figure .More:hover{
 }
 
 /* Card Styling */
-.card {
+.Airport .card {
     border-radius:10px;
     box-shadow: #777 0 0 10px;
     border: 1px solid #fff;
     text-align: center;
-    width: 360px; /* Adjust width slightly smaller than 400px to fit layout */
+    width: 400px; /* Adjust width slightly smaller than 400px to fit layout */
     height: 100vh;
 }
 
 /* Image inside the card */
-.card .image {
+.Airport .card .image {
     height: 300px;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.card .image img {
+.Airport .card .image img {
     width: 100%;
     height: 100%;
     vertical-align: middle;

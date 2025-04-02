@@ -591,6 +591,11 @@ body.dark .search-field i{
 
     }
 }
+@media (max-width: 960px){
+    .Trans .Accommodation .More{
+        margin-left: 100px;
+    }
+}
 
 @media (max-width: 890px) {
 
@@ -720,6 +725,7 @@ body.dark .search-field i{
     .travel-assistance{
         height: auto;
     }
+
     .Trans-Mob .Accommodation .More{
         margin-left: 100px;
     }
@@ -784,6 +790,7 @@ body.dark .search-field i{
         color: var(--text-color);
         
     }
+
     .Trans{
         display: none;
         
@@ -927,7 +934,7 @@ body.dark .search-field i{
 
     .Accommodation p{
         font-size: 16px;
-        text-align: left;
+        text-align: center;
     }
     
 
@@ -975,7 +982,7 @@ body.dark .search-field i{
     }
     .Accommodation p{
         font-size: 15px;
-        text-align: left;
+        text-align: center;
     }
 
     .Accommodation h3{
@@ -1004,7 +1011,7 @@ body.dark .search-field i{
 
     .Accommodation p{
         font-size: 15px;
-        text-align: left;
+        text-align: center;
     }
 
     .Accommodation h3{

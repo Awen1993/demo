@@ -1019,3 +1019,31 @@ body.dark .search-field i{
     }
    
 }
+@media (min-width: 488px) {
+
+    .Trans img{
+        max-width: 100%;
+    }
+
+    .Card figure img{
+        width: 100%;
+        gap: 10px;
+    }
+    .Card figcaption h3{
+        color: #FFD700;
+    }
+ 
+    .Card figure img{
+        max-width: 100%;
+    }
+
+    .Accommodation p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .Accommodation h3{
+        margin-bottom: 0px;
+    }
+   
+}

@@ -645,6 +645,126 @@ nav .menu ul li ul li a:hover {
     transform: scale(1.05);
 }
 
+/*----Trans-Mobile--*/
+
+.Trans-Mobile{
+    display: none;
+   
+}
+
+.Trans-Mobile img{
+    width: 500px;
+    border-radius: 10px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.Accommodation{
+    flex: 1;
+}
+
+.Accommodation h3{
+    font-size: 25px;  
+    color: #FFD700;  
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Accommodation p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: var(--text-color);
+    text-align: justify;
+    font-family: 'Raleway';
+}
+
+.Trans-Mobile .Accommodation a{
+    text-decoration: none;
+}
+
+.Trans-Mobile .Accommodation .More{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #00b3ff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    margin-left: 200px;
+    animation: fadeInUp 1.5s ease-in-out; 
+    border: 1px solid #fff;
+    
+}
+.Trans-Mobile .Accommodation .More:hover{
+    background: #00b3fff3;
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+/*Trans-Mob*/
+
+.Trans-Mob{
+    display: none;
+   
+}
+
+.Trans-Mob img{
+    width: 500px;
+    border-radius: 10px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.Accommodation{
+    flex: 1;
+}
+
+.Accommodation h3{
+    font-size: 25px;  
+    color: #FFD700;  
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Accommodation p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: var(--text-color);
+    text-align: justify;
+    font-family: 'Raleway';
+}
+
+.Trans-Mob .Accommodation a{
+    text-decoration: none;
+}
+
+.Trans-Mob .Accommodation .More{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #00b3ff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    margin-left: 200px;
+    animation: fadeInUp 1.5s ease-in-out; 
+    border: 1px solid #fff;
+    
+}
+.Trans-Mob .Accommodation .More:hover{
+    background: #00b3fff3;
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
 .Movement{
     width: 100%;
     padding: 20px;

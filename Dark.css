@@ -692,14 +692,16 @@ body.dark .search-field i{
 @media (max-width: 832px){
     .Card figure{
         text-align: center; /* Centers the caption */
-        width: 300px; /* Set a fixed width */
+        width: 400px; /* Set a fixed width */
         display: flex;
         flex-direction: column; /* Keeps image and caption in column */
         align-items: center; /* Centers content */
+        padding: 20px;
     }
 
     .Card figure img{
         width: 100%;
+        
        
       
     }
@@ -707,9 +709,6 @@ body.dark .search-field i{
     .Card figcaption p{
         font-size: 16px;
     }
-}
-
-@media (max-width: 790px){
     .Movement img{
         width: 300px;
     }
@@ -726,27 +725,35 @@ body.dark .search-field i{
         height: auto;
     }
 
-    .Trans-Mob .Accommodation .More{
+    .Mobility  .Accommodation .More{
         margin-left: 100px;
     }
-
 }
+
+
+@media (max-width: 819px) {
+    .Card figure img {
+        max-width: 100%;
+        width: 100%;
+        height: auto; /* Ensure proportional scaling */
+    }
+}
+
 
 
 @media (max-width: 768px) {
 
     .Card figure{
         text-align: center; /* Centers the caption */
-        width: 300px; /* Set a fixed width */
+        width: 1000px !important; /* Set a fixed width */
         display: flex;
         
-        flex-direction: column; /* Keeps image and caption in column */
+         /* Keeps image and caption in column */
         align-items: center; /* Centers content */
     }
 
     .Card figure img{
         width: 100%;
-        gap: 10px;
     }
     .Card figcaption h3{
         color: #FFD700;
@@ -792,86 +799,21 @@ body.dark .search-field i{
     }
 
     .Trans{
+        display: done;
+         
+    }
+    .Mobility{
         display: none;
-        
-        
     }
 
     
     
-    .Mobile {
-        width: 100%;
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 1rem;
-        font-family: 'Raleway';
-}
-
-    .Mobile img{
-        width: 250px;
-        border-radius: 10px;
-        vertical-align: middle;
-        object-fit: cover;
-}
+ 
 
     .Mobile .Accommodation .More{
     margin-left: 100px;
 }
 
-    
-    .Mobility {
-        width: 100%;
-        padding: 20px;
-        display: none;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 1rem;
-        font-family: 'Raleway';
-}
-
-    .Mobility img{
-        width: 250px;
-        border-radius: 10px;
-        vertical-align: middle;
-        object-fit: cover;
-}
-
-    .Trans img{
-        max-width: 450px;
-    }
-
-    .Movement img{
-        display: flex;
-    }
-
-    .Movement img{
-        width: 500px;
-    }
-
-    .Movement-Mobile{
-        display: none;
-    }
-
-    .Movement-Mobile img{
-        width: 1000px;
-    }
-
-    .Movement-Mobile {
-        padding: 10px;
-    }
-    .Movement-Mobile h3 {
-        font-size: 1.2rem;
-    }
-    .Movement-Mobile p {
-        font-size: 0.9rem;
-    }
-
-    .Movement-Mobile .Move .More {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -899,11 +841,7 @@ body.dark .search-field i{
     .social-icons {
         justify-content: center;
     }
-
-
-}
-@media (max-width: 634px){
-
+    
     .Card figure{
         text-align: center; /* Centers the caption */
         width: 250px; /* Set a fixed width */
@@ -949,9 +887,12 @@ body.dark .search-field i{
     }
 
 
-
 }
-@media (max-width: 534px){
+
+    
+
+
+@media (max-width: 590px){
     .features h1 {
         font-size: 20px;
         margin-bottom: 0px;
@@ -1024,6 +965,9 @@ body.dark .search-field i{
     .Mobile{
         display: none;
     }
+    .Trans{
+        display: none;
+    }
 
     .Mobility{
         display: flex;
@@ -1067,84 +1011,3 @@ body.dark .search-field i{
     }
 }
 
-/* 📌 Responsive Design */
-@media (max-width: 1024px) {
-    .swiper {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .card .image {
-        height: 250px; /* Smaller but still square */
-        width: 250px;
-    }
-
-    .button {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-
-    .swiper-button-next, .swiper-button-prev {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .Airport {
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .card {
-        width: 90%;
-        max-width: 280px;
-        padding: 15px;
-    }
-
-    .card .image {
-        height: 200px;
-        width: 200px;
-    }
-
-    .Airport .name-profession h2 {
-        font-size: 14px;
-    }
-
-    .Airport .name-profession p {
-        font-size: 12px;
-    }
-
-    .swiper-button-next, .swiper-button-prev {
-        font-size: 18px;
-        padding: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        max-width: 230px;
-        padding: 10px;
-    }
-
-    .card .image {
-        height: 180px;
-        width: 180px;
-    }
-
-    .Airport .name-profession h2 {
-        font-size: 12px;
-    }
-
-    .Airport .name-profession p {
-        font-size: 10px;
-    }
-
-    .swiper-button-next, .swiper-button-prev {
-        font-size: 16px;
-    }
-}

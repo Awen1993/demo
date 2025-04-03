@@ -561,12 +561,13 @@ nav .menu ul li ul li a:hover {
 
 .Card figure img{
     max-width: 100%;
-    width: 100%; /* Makes images responsive */
+    width: 100%;/* Makes images responsive */
     border-radius: 10px; /* Optional: Adds rounded corners */
 }
 .Card figcaption{
     text-align: center;
 }
+
 .Card figcaption h3{
     font-size: 20px;  /* Adjust text size */
     color: #FFD700;  /* Change text color */
@@ -1352,12 +1353,13 @@ figure .More:hover{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
-.Airport{
+.Airport {
     padding: 40px;
     margin-top: 50px;
     font-family: 'Raleway', sans-serif;
     text-align: justify;
 }
+
 /* Swiper Container */
 .swiper {
     width: 100%;
@@ -1374,12 +1376,13 @@ figure .More:hover{
 
 /* Card Styling */
 .Airport .card {
-    border-radius:10px;
+    border-radius: 10px;
     box-shadow: #777 0 0 10px;
     border: 1px solid #fff;
     text-align: center;
-    width: 400px; /* Adjust width slightly smaller than 400px to fit layout */
-    height: 100vh;
+    width: 90%; /* Use a percentage for responsiveness */
+    max-width: 400px; /* Ensure it doesn’t get too large */
+    height: auto;
 }
 
 /* Image inside the card */
@@ -1400,34 +1403,35 @@ figure .More:hover{
     border: 1px solid #fff;
 }
 
-/* Adjust Navigation Buttons */
+/* Navigation Buttons */
 .swiper-button-next, .swiper-button-prev {
-    color: #FFD700; /* Gold color */
+    color: #FFD700;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    font-size: 10px; /* Make them larger */
+    font-size: 18px; /* Adjusted for better visibility */
     padding: 10px;
     transition: 0.3s ease-in-out;
 }
 
-/* Move arrows slightly outside the images */
+/* Adjust button positions */
 .swiper-button-prev {
-    left: 10px;
+    left: -5px; /* More space on smaller screens */
 }
 
 .swiper-button-next {
-    right: 10px;
+    right: -5px;
 }
 
-/* Pagination Styling */
+/* Pagination */
 .swiper-pagination {
     position: absolute;
     bottom: 10px;
 }
 
-.button{
+/* Button Styling */
+.button {
     border: none;
     font-size: 16px;
     color: #fff;
@@ -1439,27 +1443,76 @@ figure .More:hover{
     transition: all 0.3s ease;
     border: 1px solid #fff;
 }
-.button:hover{
+
+.button:hover {
     background: #265df2;
 }
 
-.button a{
+.button a {
     text-decoration: none;
 }
 
-.Airport .description{
+/* Description */
+.Airport .description {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;  
+    margin: 20px 0;
+    padding: 10px;
 }
-.Airport .name-profession h2{
+
+/* Name & Profession */
+.Airport .name-profession h2 {
     font-size: 14px;
     text-align: left;
-    padding: 10px;  
+    padding: 10px;
     color: #FFD700;
 }
-.Airport .name-profession p{
+
+.Airport .name-profession p {
     color: var(--text-color);
 }
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .Airport {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .swiper-slide {
+        flex-direction: column;
+    }
+
+    .Airport .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .swiper-button-prev {
+        left: 5px;
+    }
+
+    .swiper-button-next {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Airport {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .Airport .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .Airport .description {
+        font-size: 14px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        font-size: 14px;
+    }
+}
